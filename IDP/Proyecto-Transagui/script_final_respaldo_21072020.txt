@@ -1,0 +1,628 @@
+--
+-- Service: script_alerta_sonora
+-- Created: 2018-10-08
+--
+-- Ultima modificación: 08-01-2019
+-- Realizada por: Abel Ludeña
+-- Motivo:  mejorar el comportamiento cuando pierde señal GPRS y tx por SAT
+--          cambiar la configuracion del utility agent de acuerdo a la plataforma donde reporte
+--          geosys o hunter pro. En este último sobretodo la confi no guarda en flash 
+--          msjs cuando pierde cobertura GPRS, para ser enviados cuando recupera cobertura.
+
+module(..., package.seeall)
+
+--
+-- Version information (required)
+--
+_VERSION = "1.0.4"
+
+--
+-- Run service (required)
+--
+
+REQUEST_REPORT_MIN = 2
+SAT_REPORT_MIN = 3
+IDLING_REPORT_MIN = 4
+
+
+
+messageHandle  = nil
+
+local DEBUG_TIME = 10
+
+local msgQ, serverConnQ, tmrDebugQ, tmrQ1, tmrQ2, tmrQ3, tmrQ4, tmrQ5
+
+local stationaryIntvCell_initialValue
+local stationaryIntvSat_initialValue
+local chrCicles
+
+local myUtilityConfigTable_buffMsg
+local myUtilityConfigTable_nobuffMsg
+
+
+function traceIntervalValues()
+  tracef("    %s","MovingIntervalCell = "..svc.AVL.properties.MovingIntervalCell)
+  tracef("    %s","MovingIntervalSat = "..svc.AVL.properties.MovingIntervalSat)
+  tracef("    %s","StationaryIntervalCell = "..svc.AVL.properties.StationaryIntervalCell)
+  tracef("    %s","StationaryIntervalSat = "..svc.AVL.properties.StationaryIntervalSat)
+  trace("*********************************************")
+end
+
+
+function trc(msj)
+  tracef( "%s : %s", _NAME, msj)
+end
+
+function insertDebug(level, dbgStr)  
+    tracef( "%s : %s", _NAME, dbgStr)
+    svc.log.addDebug(_SIN, level, dbgStr)
+
+end
+
+
+-- -----------------------------------------------------
+-- Send Custom Message
+-- -----------------------------------------------------
+local function sendMessage(min)
+  --trace("-----------------"..svc.AVL.properties.DigPorts)
+  local msgFields = {
+                          Latitude      = svc.position.properties.latitude,
+                          Longitude     = svc.position.properties.longitude,
+                          Speed         = svc.position.properties.speed,
+                          Heading       = svc.position.properties.heading,
+                          EventTime     = os.time(),
+                          --GpsFixAge     = svc.position.properties.fixTime,
+                          Odometer      = svc.AVL.properties.Odometer,
+                      } 
+                            
+  local options
+  if min==3 then
+    options =  {send=true, log=true, lifetime=20, transports={ {1, 10} }, persistent=true}
+  else
+    options =  {send=true, log=true, lifetime=20, transports={ {2, 1}, {1, 10} }, persistent=true}
+  end
+  
+  local refNo, err = messageHandle:send(min, msgFields, options)
+  
+  if (not err) then
+    insertDebug(svc.log.INFO, string.format("%s: message sent (RefNo = %d). (MIN = %s)", _NAME, refNo, min) )
+    --local res, err = user.dataExtraction.insertRegister(_SIN, min, refNo, miString, noBits, SAVE_TO_FILE)        
+  else    
+    insertDebug(svc.log.ERROR, string.format("%s: (MIN = %s) message not sent: %s", _NAME, min, err))
+    -- Message was not placed in Tx queue but it goes to the extract table and file
+    --local res, err = user.dataExtraction.insertRegister(_SIN, min, nil , miString, noBits, SAVE_TO_FILE)   
+  end
+ 
+ 
+end
+
+
+
+function eventosAVL(min,fields)
+
+  if min == 4 then -- ignition ON
+      trace("***************  IGNITION ON  ***************")
+      svc.AVL.properties.MovingIntervalCell     = svc.AVL.properties.MovingIntervalCell
+      svc.AVL.properties.MovingIntervalSat      = svc.AVL.properties.MovingIntervalSat
+      svc.AVL.properties.StationaryIntervalCell = svc.AVL.properties.MovingIntervalCell
+      svc.AVL.properties.StationaryIntervalSat  = svc.AVL.properties.MovingIntervalSat
+      traceIntervalValues()
+      
+      --Activa timer debug state
+      tmrDebugQ:event():arm(DEBUG_TIME * 10)
+      
+      --Activa el timer de reporte satelital personalizado
+      tmrQ4:event():disarm()
+      tmrQ4:clear()
+      tmrQ4:event():arm( properties.timeSatIntervalOn * 10)
+      trace("-------> Intervalo de tiempo satelital hunter-transagui = ".. properties.timeSatIntervalOn)
+      
+      --Desactiva el timer y la salida 3
+      tmrQ1:event():disarm()
+      tmrQ1:clear()
+      svc.eio.writePort(3, 1)
+      
+      --Activa el timer y la salida 4
+      tmrQ2:event():arm( properties.chargerTime * 10)
+      svc.eio.writePort(4, 0)
+      trace("******** ciclos = "..chrCicles)
+      
+      --desactiva timer de ralentí en off
+      tmrQ5:event():disarm()
+      tmrQ5:clear()
+      
+      
+
+    elseif min == 5 then -- ignition OFF
+      trace("***************  IGNITION OFF  ***************")
+      svc.AVL.properties.StationaryIntervalCell = stationaryIntvCell_initialValue
+      svc.AVL.properties.StationaryIntervalSat  = stationaryIntvSat_initialValue
+      traceIntervalValues()
+      
+      -- desactiva timer debug state
+      tmrDebugQ:event():disarm()
+      tmrDebugQ:clear()
+      
+      --Activa el timer de reporte satelital personalizado
+      tmrQ4:event():disarm()
+      tmrQ4:clear()
+      tmrQ4:event():arm( properties.timeSatIntervalOff * 10)
+      trace("-------> Intervalo de tiempo satelital hunter-transagui = ".. properties.timeSatIntervalOff)
+      
+      --Activa el timer y la salida 3
+      tmrQ1:event():arm( properties.bubTime * 10)
+      svc.eio.writePort(3, 0)
+      
+      --Desativa el timer y la salida 4
+      tmrQ2:event():disarm()
+      tmrQ2:clear()
+      svc.eio.writePort(4, 1)
+      
+      --Desativa el chargerDelay
+      tmrQ3:event():disarm()
+      tmrQ3:clear()
+      chrCicles = properties.chargerCicles
+      trace("******** ciclos = "..chrCicles)
+      
+      --Activa timer de ralentí en off
+      tmrQ5:event():disarm()
+      tmrQ5:clear()
+      tmrQ5:event():arm(properties.idlingTimer * 10)
+      trc("timer idling hunter-transagui iniciado = "..properties.idlingTimer)
+
+      
+    elseif min == 8 then -- speeding start
+      trace("******************* ALERTA SONORA ACTIVADA *******************")
+      --svc.eio.writePort(3, 0)
+      
+    elseif min == 9 then -- speeding end
+      trace("******************* ALERTA SONORA DESACTIVADA *******************")
+      --svc.eio.writePort(3, 1)
+      
+    elseif min == 21 then
+      sendMessage(IDLING_REPORT_MIN)
+      trc("mensaje enviado: idling hunter-transagui")
+    end
+
+end
+
+
+function mensajeRecibido(arg)
+
+  trace("**************** MENSAJE RECIBIDO ****************")
+  trace(arg)
+
+  if (arg.min) == 1 then
+    trace("Send Custom Report")
+    trace("-----------------------------------------------")
+  elseif (arg.min) == 2 then
+    svc.AVL.properties.MovingIntervalCell = arg.fields.value
+    if svc.eio.properties.port1Value==1 then
+      svc.AVL.properties.StationaryIntervalCell = svc.AVL.properties.MovingIntervalCell
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 3 then
+    svc.AVL.properties.MovingIntervalSat = arg.fields.value
+    if svc.eio.properties.port1Value==1 then
+      svc.AVL.properties.StationaryIntervalSat = svc.AVL.properties.MovingIntervalSat
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 4 then
+    stationaryIntvCell_initialValue = arg.fields.value
+    if svc.eio.properties.port1Value==0 then
+      svc.AVL.properties.StationaryIntervalCell = stationaryIntvCell_initialValue
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 5 then
+    stationaryIntvSat_initialValue = arg.fields.value
+    if svc.eio.properties.port1Value==0 then
+      svc.AVL.properties.StationaryIntervalSat  = stationaryIntvSat_initialValue
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 6 then
+    properties.hunterProMsg = arg.fields.value
+  end
+
+
+end
+
+
+------------------------------------
+-- procesa timer Debug State
+------------------------------------
+function processTimerDebugState()
+  tmrDebugQ:event():arm(DEBUG_TIME * 10)
+  if properties.debugState then
+    trace("--------------- DEBUG STATE ---------------")
+    trace("RSSI = ".. svc.cell.properties.rssi)
+    --trace("Server Connected = ".. svc.ip.properties.serverConnected)
+    --trace("APN Connected = ".. svc.cell.properties.APNConnected)
+    trace("MCC = ".. svc.cell.properties.mcc)
+    trace("MNC = ".. svc.cell.properties.mnc)
+    trace("Latitud = ".. svc.position.properties.latitude)
+    trace("Longitud = ".. svc.position.properties.longitude)
+    trace("Time = ".. os.time())
+    trace(" ")
+  end
+
+end
+
+
+------------------------------------
+-- procesa el timer q1
+------------------------------------
+function processTimerQ1()
+  tmrQ1:event():disarm()
+  tmrQ1:clear()
+  svc.eio.writePort(3, 1)
+end
+
+
+------------------------------------
+-- procesa el timer q2
+------------------------------------
+function processTimerQ2()
+  
+  tmrQ2:event():disarm()
+  tmrQ2:clear()
+  svc.eio.writePort(4, 1)
+  
+  if chrCicles>1 then
+    tmrQ3:event():arm(properties.chargerDelay*10)
+    chrCicles = chrCicles - 1
+    trace("******** ciclos = "..chrCicles)
+  end
+  
+end
+
+------------------------------------
+-- procesa el timer q3
+------------------------------------
+function processTimerQ3()
+  tmrQ2:event():arm(properties.chargerTime * 10)
+  svc.eio.writePort(4, 0)
+end
+
+
+------------------------------------
+-- procesa el timer q4
+------------------------------------
+function processTimerQ4()
+  trace("")  
+  trace("********* CADUCO TIMER SATELITAL HUNTER - TRANSAGUI *********")
+  trace("") 
+  if not svc.ip.properties.serverConnected or svc.cell.properties.rssi<3 then
+    sendMessage(SAT_REPORT_MIN)
+    trace("")
+    trace("********** MENSAJE ENVIADO SAT_REPORT_MIN **********")
+    trace("")
+  end
+  if svc.eio.properties.port1Value==1 then
+    tmrQ4:event():arm(properties.timeSatIntervalOn * 10)
+    trc("Intervalo de tiempo satelital hunter-transagui = ".. properties.timeSatIntervalOn)
+  elseif svc.eio.properties.port1Value==0 then
+    tmrQ4:event():arm(properties.timeSatIntervalOff * 10)
+    trc("Intervalo de tiempo satelital hunter-transagui = ".. properties.timeSatIntervalOff)
+  end
+end
+
+
+------------------------------------
+-- procesa el timer q5
+------------------------------------
+function processTimerQ5()
+ sendMessage(IDLING_REPORT_MIN)
+end
+
+
+
+
+------------------------------------
+-- Change message definition
+------------------------------------
+function changeMsgDef(args)
+
+  if args then
+    trace("****************** SERVIDOR CONECTADO!! ******************")
+    local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_onCell,126)
+    tracef("%s %s : %s",_NAME, "utility config on Cell",tostring(res))
+  else
+    trace("****************** SERVIDOR DESCONECTADO!! ******************")
+    local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_onSat,126)
+    tracef("%s %s : %s",_NAME, "utility config on Sat",tostring(res))
+  end
+    
+end
+
+
+------------------------------------
+-- Change properties SIN128
+------------------------------------
+function onConfigChange(propList)
+  
+  for i=1, #propList do
+ 
+     if ( propList[i].name == "hunterProMsg") then
+          
+          
+     end
+ 
+ end
+
+end
+
+
+
+function entry()
+  trace(_NAME, ": service started")
+  --sched.delay(-1)
+  
+  if svc.ip.properties.serverConnected then
+    trace("****************** SERVIDOR CONECTADO!! ******************")
+    local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_onCell,126)
+    tracef("%s %s : %s",_NAME, "utility config on Cell",tostring(res))
+  else
+    trace("****************** SERVIDOR DESCONECTADO!! ******************")
+    local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_onSat,126)
+    tracef("%s %s : %s",_NAME, "utility config on Sat",tostring(res))
+  end
+  
+
+  while true do
+    
+    local args = {sched.waitQ(-1, msgQ, serverConnQ, tmrDebugQ, tmrQ1, tmrQ2, tmrQ3, tmrQ4, tmrQ5)}
+    local q, event, arguments = table.remove(args,1), table.remove(args,1), table.remove(args,1)
+
+    if q == msgQ then
+      mensajeRecibido(arguments)
+    elseif q == serverConnQ then
+      changeMsgDef(arguments)
+    elseif q == tmrDebugQ then
+      processTimerDebugState()
+    elseif q == tmrQ1 then
+      processTimerQ1()
+    elseif q == tmrQ2 then
+      processTimerQ2()
+    elseif q == tmrQ3 then
+      processTimerQ3()
+    elseif q == tmrQ4 then
+      processTimerQ4() -- reporte periodico por satelite personalizado
+    elseif q == tmrQ5 then
+      processTimerQ5() -- rerpote de ralentí personalizado
+    end
+
+  end
+
+end
+
+--
+-- Initialize service (required)
+--
+function init()
+
+  svc.AVL.MSG_RegisterEventNotify(eventosAVL)
+  messageHandle = svc.message.register(_SIN)
+
+  if (not messageHandle) then
+    trace(svc.log.ERROR, string.format("%s:SIN %d already registered", _NAME, _SIN))
+    return
+  end
+  
+  
+  msgQ          = sched.createEventQ(10, messageHandle, 'RX_DECODED')
+  serverConnQ   = sched.createEventQ(2, svc.ip, "SERVER_CONNECTED")
+  tmrDebugQ = sched.createEventQ(1, "_TIMER", sys.timer.create() )
+  tmrQ1 = sched.createEventQ(1, "_TIMER", sys.timer.create() )
+  tmrQ2 = sched.createEventQ(1, "_TIMER", sys.timer.create() )   
+  tmrQ3 = sched.createEventQ(1, "_TIMER", sys.timer.create() )
+  tmrQ4 = sched.createEventQ(1, "_TIMER", sys.timer.create() )
+  tmrQ5 = sched.createEventQ(1, "_TIMER", sys.timer.create() )
+
+  stationaryIntvCell_initialValue = svc.AVL.properties.StationaryIntervalCell
+  stationaryIntvSat_initialValue = svc.AVL.properties.StationaryIntervalSat
+  chrCicles = properties.chargerCicles
+  
+  myUtilityConfigTable_onCell = {
+      [1]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [2]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [3]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [4]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [5]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [6]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [7]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [8]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [9]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [10]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [11]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [12]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [13]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [14]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [15]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [16]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [17]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [18]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [19]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [20]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [21]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [22]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10},
+      [23]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [24]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [25]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [26]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [27]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [28]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [29]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [30]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [31]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [32]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [33]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [34]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [35]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [36]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [37]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [38]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [39]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [40]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [41]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [42]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [43]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [44]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [45]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [46]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [47]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [48]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [49]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10},
+      [50]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [51]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [52]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [53]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10},
+      [54]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [55]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [56]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [57]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [58]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [59]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [60]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [61]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [62]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [63]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [64]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [65]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [66]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [67]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [68]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [69]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [70]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [71]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [72]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [73]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [74]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [75]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [76]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [77]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [78]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [79]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [80]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [81]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [82]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [83]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [84]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [85]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [86]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [87]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [88]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [89]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [90]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [91]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [92]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [93]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [94]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [95]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [96]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [97]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [98]={transport=nil, isLog=true, priority=3, lifetime=10080}
+      }
+
+  myUtilityConfigTable_onSat = {
+      [1]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [2]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [3]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [4]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [5]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [6]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [7]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [8]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [9]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [10]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [11]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [12]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [13]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [14]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [15]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [16]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [17]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [18]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [19]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [20]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [21]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [22]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [23]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [24]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [25]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [26]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [27]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [28]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [29]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [30]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [31]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [32]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [33]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [34]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [35]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [36]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [37]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [38]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [39]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [40]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [41]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [42]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [43]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [44]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [45]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [46]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [47]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [48]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [49]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [50]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [51]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [52]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [53]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=20},
+      [54]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [55]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [56]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [57]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [58]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [59]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [60]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [61]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [62]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [63]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [64]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [65]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [66]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [67]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [68]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [69]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [70]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [71]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [72]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [73]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [74]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [75]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [76]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [77]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [78]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [79]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [80]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [81]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [82]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [83]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [84]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [85]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [86]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [87]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [88]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [89]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [90]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [91]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [92]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [93]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [94]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [95]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [96]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [97]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [98]={transport=nil, isLog=true, priority=3, lifetime=10080}
+      }
+
+end
+
