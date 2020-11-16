@@ -496,7 +496,7 @@ This message would be deferred by any other AVL event that generates a from-mobi
 -- Service: script_alerta_sonora
 -- Created: 2018-10-08
 --
--- Ultima modificación: 08-01-2019
+-- Ultima modificación: 09-11-2020
 -- Realizada por: Abel Ludeña
 -- Motivo:  mejorar el comportamiento cuando pierde señal GPRS y tx por SAT
 --          cambiar la configuracion del utility agent de acuerdo a la plataforma donde reporte

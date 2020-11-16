@@ -2,15 +2,15 @@
 <Solution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Packages>
     <Package>
-      <Filename>../../../Agentes/AVL_354_Util_212_Lib_113_IDP782.idppkg</Filename>
-      <Enabled>true</Enabled>
-    </Package>
-    <Package>
       <Filename>script_mensajes_transagui_15072020.idppkg</Filename>
       <Enabled>true</Enabled>
     </Package>
     <Package>
       <Filename>geocercas/geofence_designer_transagui.idppkg</Filename>
+      <Enabled>true</Enabled>
+    </Package>
+    <Package>
+      <Filename>AVL_354_Util_212_Lib_113_IDP782.idppkg</Filename>
       <Enabled>true</Enabled>
     </Package>
   </Packages>
