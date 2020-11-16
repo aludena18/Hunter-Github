@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Packages>
+    <Package>
+      <Filename>AVL_354_Util_212_Lib_113_IDP782.idppkg</Filename>
+      <Enabled>true</Enabled>
+    </Package>
+    <Package>
+      <Filename>script_mensajes_sandvik.idppkg</Filename>
+      <Enabled>true</Enabled>
+    </Package>
+  </Packages>
+  <ServiceMaps>
+    <ServiceMap>
+      <Name>AVL</Name>
+      <SIN>126</SIN>
+      <Enabled>true</Enabled>
+      <Datafiles />
+      <PropertyValues>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>1</PIN>
+          <Value>5</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>2</PIN>
+          <Value>30</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>3</PIN>
+          <Value>10</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>5</PIN>
+          <Value>0</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>6</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>7</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>9</PIN>
+          <Value>1800</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>10</PIN>
+          <Value>60</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>11</PIN>
+          <Value>3600</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>12</PIN>
+          <Value>900</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>16</PIN>
+          <Value>0</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>23</PIN>
+          <Value>180</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>27</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>31</PIN>
+          <Value>0</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>35</PIN>
+          <Value>220</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>36</PIN>
+          <Value>20</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>38</PIN>
+          <Value>30</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>40</PIN>
+          <Value>300</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>126</SIN>
+          <PIN>46</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="EnumPropertyValue">
+          <SIN>126</SIN>
+          <PIN>47</PIN>
+          <Value>2</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="EnumPropertyValue">
+          <SIN>126</SIN>
+          <PIN>48</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="EnumPropertyValue">
+          <SIN>126</SIN>
+          <PIN>49</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="EnumPropertyValue">
+          <SIN>126</SIN>
+          <PIN>50</PIN>
+          <Value>1</Value>
+        </PropertyValue>
+      </PropertyValues>
+    </ServiceMap>
+    <ServiceMap>
+      <Name>Utility</Name>
+      <SIN>127</SIN>
+      <Enabled>true</Enabled>
+      <Datafiles />
+      <PropertyValues />
+    </ServiceMap>
+    <ServiceMap>
+      <Name>CellMonitor</Name>
+      <SIN>199</SIN>
+      <Enabled>true</Enabled>
+      <Datafiles />
+      <PropertyValues>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>1</PIN>
+          <Value>5</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>2</PIN>
+          <Value>5</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>20</PIN>
+          <Value>7</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>40</PIN>
+          <Value>7</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>60</PIN>
+          <Value>15</Value>
+        </PropertyValue>
+        <PropertyValue xsi:type="UnsignedIntPropertyValue">
+          <SIN>199</SIN>
+          <PIN>65</PIN>
+          <Value>12</Value>
+        </PropertyValue>
+      </PropertyValues>
+    </ServiceMap>
+    <ServiceMap>
+      <Name>idp_agente_avl_hunter</Name>
+      <SIN>142</SIN>
+      <Enabled>true</Enabled>
+      <Datafiles />
+      <PropertyValues />
+    </ServiceMap>
+  </ServiceMaps>
+  <PropertyValues>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>16</SIN>
+      <PIN>1</PIN>
+      <Value>15000</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>21</SIN>
+      <PIN>1</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>1</PIN>
+      <Value>4</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>26</SIN>
+      <PIN>1</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>21</SIN>
+      <PIN>2</PIN>
+      <Value>15</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>23</SIN>
+      <PIN>2</PIN>
+      <Value>64</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="StringPropertyValue">
+      <SIN>29</SIN>
+      <PIN>2</PIN>
+      <Value>claro.pe</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>18</SIN>
+      <PIN>2</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>2</PIN>
+      <Value>16</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>21</SIN>
+      <PIN>3</PIN>
+      <Value>10</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>23</SIN>
+      <PIN>3</PIN>
+      <Value>32</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>16</SIN>
+      <PIN>3</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>3</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>4</PIN>
+      <Value>3</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>21</SIN>
+      <PIN>4</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>23</SIN>
+      <PIN>4</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>4</PIN>
+      <Value>63</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>23</SIN>
+      <PIN>5</PIN>
+      <Value>64</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>17</SIN>
+      <PIN>5</PIN>
+      <Value>3</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>5</PIN>
+      <Value>2</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>21</SIN>
+      <PIN>5</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>34</SIN>
+      <PIN>5</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>25</SIN>
+      <PIN>5</PIN>
+      <Value>100</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>6</PIN>
+      <Value>1</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>16</SIN>
+      <PIN>6</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>23</SIN>
+      <PIN>6</PIN>
+      <Value>8</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>23</SIN>
+      <PIN>7</PIN>
+      <Value>7</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="SignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>10</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="SignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>11</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>12</PIN>
+      <Value>3</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="SignedIntPropertyValue">
+      <SIN>34</SIN>
+      <PIN>12</PIN>
+      <Value>0</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>13</PIN>
+      <Value>2</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>14</PIN>
+      <Value>5</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>20</SIN>
+      <PIN>15</PIN>
+      <Value>2</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>15</PIN>
+      <Value>2</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>25</SIN>
+      <PIN>16</PIN>
+      <Value>3000</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="DataPropertyValue">
+      <SIN>23</SIN>
+      <PIN>17</PIN>
+      <Items>
+        <unsignedByte>126</unsignedByte>
+        <unsignedByte>127</unsignedByte>
+      </Items>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>34</SIN>
+      <PIN>20</PIN>
+      <Value>2</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>34</SIN>
+      <PIN>21</PIN>
+      <Value>4</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>22</PIN>
+      <Value>30</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>23</PIN>
+      <Value>6</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>20</SIN>
+      <PIN>23</PIN>
+      <Value>false</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="UnsignedIntPropertyValue">
+      <SIN>18</SIN>
+      <PIN>23</PIN>
+      <Value>1</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>26</PIN>
+      <Value>3</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="DataPropertyValue">
+      <SIN>23</SIN>
+      <PIN>31</PIN>
+      <Items>
+        <unsignedByte>27</unsignedByte>
+      </Items>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>34</PIN>
+      <Value>6</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>25</SIN>
+      <PIN>37</PIN>
+      <Value>3</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>33</SIN>
+      <PIN>49</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="BooleanPropertyValue">
+      <SIN>33</SIN>
+      <PIN>55</PIN>
+      <Value>true</Value>
+    </PropertyValue>
+    <PropertyValue xsi:type="EnumPropertyValue">
+      <SIN>33</SIN>
+      <PIN>70</PIN>
+      <Value>1</Value>
+    </PropertyValue>
+  </PropertyValues>
+  <DisabledSINs>
+    <int>34</int>
+  </DisabledSINs>
+</Solution>
