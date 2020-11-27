@@ -1,0 +1,3633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>antamina_geocercas_internas_externas_derrumbe_24112020.kml</name>
+	<Style id="style4">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style14">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style36</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style45">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id40">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style29</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style53">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style00">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7faaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style67">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style46">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style1">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style180</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style53</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style13">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id110">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style42</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style37">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style18">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id39">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style45</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style33</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style38</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style32">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style42">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style26">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style73">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style31">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style39</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style44</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style33">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style120">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style44">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style35">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style49">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style23">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style62</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style73</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style59">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style0">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style27">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style54">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>66ffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style260">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaa55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style23</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style61">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style01">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style5">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style6">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style150</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style50</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style37</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style8">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style47</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style32</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id27">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style67</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style110</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style59</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style28</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style7">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>66ffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style50">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style39">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style26</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style12">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style43</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style260</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style21">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style40">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style71">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7faaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style24">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style69">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style3">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style29">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id26">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style54</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style150">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style70">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style180">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id41">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style71</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id42">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style58</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style19">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id150">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style69</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style49</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style160</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style120</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style20">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7fffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style10">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style38">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style230</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style46</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style41">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>6600ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style58">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style60">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style25</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style34">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style62">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style36">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style15">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style230">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style30">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style9">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>6600ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style27</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id160">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style41</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id70">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style43">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaa55</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id37">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style61</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style35</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style17">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style28">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style160">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style16">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style22">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style25">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style11">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id180">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style02">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style110">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffaaaa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style47">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style300">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style34</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Mis lugares</name>
+		<open>1</open>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<ItemIcon>
+					<state>open</state>
+					<href>C:/Users/STEC5/AppData/LocalLow/Google/GoogleEarth/mysavedplaces_open_0.png</href>
+				</ItemIcon>
+				<ItemIcon>
+					<state>closed</state>
+					<href>C:/Users/STEC5/AppData/LocalLow/Google/GoogleEarth/mysavedplaces_closed_0.png</href>
+				</ItemIcon>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Folder>
+			<name>zona_derrumbe</name>
+			<Placemark>
+				<name>zona_derrumbes</name>
+				<styleUrl>#stylemap_id21</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0610158014694,-9.531105398490364,0 -77.06071763772782,-9.531076956094465,0 -77.0602360122023,-9.531195741565375,0 -77.05966956486684,-9.531327582002858,0 -77.0594205771647,-9.53134579557226,0 -77.05911875066744,-9.53163633532184,0 -77.05895078999622,-9.531946090375914,0 -77.05870362038277,-9.532394578332665,0 -77.05851620142641,-9.532682924571496,0 -77.05830260737514,-9.532900683779495,0 -77.05822945355189,-9.53325039474379,0 -77.05792535102843,-9.53385942110239,0 -77.0576536511026,-9.534332171159157,0 -77.05750358210953,-9.535275817987834,0 -77.05733566794905,-9.535742938067495,0 -77.05717977981641,-9.536206654848041,0 -77.05714986191524,-9.536677674196513,0 -77.05716030313064,-9.537498174483067,0 -77.0571495251294,-9.537590404188091,0 -77.0570858709322,-9.538015506073284,0 -77.05727573256094,-9.538540425158383,0 -77.05738538668732,-9.538886083839822,0 -77.05748982775728,-9.539176919074327,0 -77.05750722901878,-9.539480518941838,0 -77.05754069946803,-9.539936068157502,0 -77.05756278955869,-9.540272378770354,0 -77.05758537068343,-9.540556362329948,0 -77.05771179230177,-9.540866295219393,0 -77.05779635195343,-9.541106653748685,0 -77.05790662922954,-9.541382286615338,0 -77.05804063311186,-9.541731341866555,0 -77.05815066137991,-9.541844078600578,0 -77.058268557836,-9.541956313620737,0 -77.05851348625612,-9.542209600512262,0 -77.05888345720822,-9.542571242770649,0 -77.05908223651723,-9.542782444301759,0 -77.05928964397759,-9.542975728004018,0 -77.05965515248909,-9.543338911387352,0 -77.06003541009687,-9.543709463729812,0 -77.06042482166039,-9.544080327914875,0 -77.06042747707311,-9.544080111348567,0 -77.06065841085733,-9.544312433691273,0 -77.06048625266551,-9.544658404469013,0 -77.06037082997659,-9.544875738266054,0 -77.06029052399343,-9.545019199388591,0 -77.06056501520436,-9.545246146976984,0 -77.06073616586683,-9.54538346886492,0 -77.06092213148514,-9.545543907929897,0 -77.06107448117605,-9.545674209428125,0 -77.06122211271702,-9.545793143274963,0 -77.06152912454024,-9.546049153965024,0 -77.06167506209037,-9.546169520337756,0 -77.06181715898259,-9.546282840230637,0 -77.06200421162029,-9.54644121033418,0 -77.06220470009244,-9.546600846901589,0 -77.0623922029737,-9.546761031205508,0 -77.06259466202106,-9.546834965270081,0 -77.06275634189619,-9.546880773134859,0 -77.06297849641504,-9.546944131290958,0 -77.06314089184426,-9.546913752067384,0 -77.06333467807046,-9.54687208046839,0 -77.06354005898092,-9.546896493235215,0 -77.06384121702615,-9.54692504004009,0 -77.06412602117734,-9.546961304542647,0 -77.06447812368334,-9.546998434643417,0 -77.06486211428482,-9.546839087350714,0 -77.06507269270205,-9.546747469003691,0 -77.06506168772664,-9.547049260548881,0 -77.06505884633286,-9.547323974828402,0 -77.06460063559268,-9.547231388493724,0 -77.06411621710504,-9.547196799826938,0 -77.06386939552121,-9.547184443687867,0 -77.06360688164686,-9.547170467214427,0 -77.06324426159608,-9.547171796930614,0 -77.06293498788308,-9.547132445318837,0 -77.06262890742416,-9.547096249727856,0 -77.06236121962594,-9.547065302830527,0 -77.06188177821726,-9.546722397740385,0 -77.06185453372329,-9.546708764075028,0 -77.0617710343524,-9.546666151277,0 -77.06167586383684,-9.54661760416519,0 -77.06163676082035,-9.546597550296328,0 -77.0615074885597,-9.546524535239257,0 -77.06124751738153,-9.54631398267883,0 -77.06099088938686,-9.546100429082372,0 -77.06054117738654,-9.545666294557838,0 -77.06034763406687,-9.545493128274293,0 -77.06013575425985,-9.545304268718072,0 -77.05971546332884,-9.545305031176033,0 -77.05939282121051,-9.545278255753388,0 -77.05893602621251,-9.545290351541381,0 -77.05823642108912,-9.545015261916536,0 -77.05786284981922,-9.544868344868791,0 -77.05753153113677,-9.544739687836353,0 -77.05713819177753,-9.544597316982895,0 -77.05682874301884,-9.544462776512463,0 -77.05655586258507,-9.544288745085298,0 -77.05647427932678,-9.544145033274068,0 -77.05639666491437,-9.54389775563277,0 -77.05603287428193,-9.543410120743514,0 -77.05581513079323,-9.543157969171677,0 -77.05565906392087,-9.542888390486329,0 -77.05545695101142,-9.54258049341367,0 -77.05516588505419,-9.542213799870751,0 -77.05493085514756,-9.541711425062047,0 -77.05473257324715,-9.541223879057139,0 -77.05484306362663,-9.541088395771146,0 -77.05441500755556,-9.540166025346629,0 -77.05435256676915,-9.539853053608804,0 -77.05443360173565,-9.539674216801901,0 -77.05438586634158,-9.539447683894341,0 -77.05434400341743,-9.539274028011752,0 -77.05429764454527,-9.539083715481372,0 -77.05423454870288,-9.538811164947845,0 -77.05417770547506,-9.538536406802169,0 -77.05404202376766,-9.5379755257523,0 -77.05396345296609,-9.537585267494194,0 -77.0539565719728,-9.537381793936978,0 -77.05388307100408,-9.537111518285929,0 -77.05378227382425,-9.536794398869677,0 -77.05374036387538,-9.536501039444076,0 -77.05381602534233,-9.535742301108886,0 -77.05387691495827,-9.535585598695638,0 -77.05397717789745,-9.535432052983824,0 -77.05407933678616,-9.535278751726896,0 -77.05422694332702,-9.535081395824761,0 -77.05446139594943,-9.534721015141713,0 -77.05474097902356,-9.534309849602979,0 -77.05501003032197,-9.533908874353601,0 -77.05529659416692,-9.53347178503334,0 -77.05542471563238,-9.533275753443244,0 -77.05557302171236,-9.533044896900735,0 -77.05581994493328,-9.532659754364289,0 -77.05605267655463,-9.532305549226978,0 -77.05628661983557,-9.532048433749543,0 -77.05653816459498,-9.531767845486398,0 -77.05673618867657,-9.531613923982365,0 -77.05690492393957,-9.531506239840262,0 -77.05711679871558,-9.531466570427083,0 -77.05731431364349,-9.531375657355094,0 -77.05751226729318,-9.531207354225003,0 -77.05787065071581,-9.531129760230792,0 -77.05878028191259,-9.530878425552261,0 -77.05916129382359,-9.530754533596598,0 -77.05953611068139,-9.530715177329206,0 -77.05990761811769,-9.530798182430756,0 -77.06022071046949,-9.530798956584521,0 -77.06067337058151,-9.53087135264831,0 -77.06108228263348,-9.53103919407012,0 -77.0610158014694,-9.531105398490364,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>100 KMH - Zona Lima - Pativilca</name>
+			<Placemark id="0">
+				<name>100 KMH - Zona Lima - Pativilca</name>
+				<description>100 KMH - Zona Lima - Pativilca</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.514644,-11.18399,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.17233296661981,-11.7525316151784,0 -77.08576298612159,-11.7342088636875,0 -77.4881657061068,-11.1935227649701,0 -77.6703942244345,-10.7994411014528,0 -77.7630611758937,-10.6533547578552,0 -77.8217323405102,-10.6546979882926,0 -77.8301261622296,-10.6684502534791,0 -77.8432343017174,-10.6806892066191,0 -77.6577968349759,-11.1119231883924,0 -77.17233296661981,-11.7525316151784,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>100 KMH - Zona Pativilca - Pto Lobitos</name>
+			<Placemark id="0">
+				<name>100 KMH - Zona Pativilca - Pto Lobitos</name>
+				<description>100 KMH - Zona Pativilca - Pto Lobitos</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.990161,-10.374787,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.83567262323758,-10.67745967710176,0 -77.82550667908488,-10.66446517668476,0 -77.82208343640936,-10.65222413111083,0 -77.8944957285194,-10.4387665405351,0 -78.00348020904229,-10.3093679212911,0 -78.0205392536425,-10.2088863133126,0 -78.1193241119273,-10.0791877018191,0 -78.14848203173506,-10.08462882965678,0 -78.13866643580968,-10.10536713042737,0 -78.13366726594582,-10.11431097858675,0 -78.1242221190915,-10.12865452427201,0 -78.12932086061822,-10.16269389291382,0 -78.0647299407718,-10.3428623713727,0 -77.9114043035368,-10.5883657232542,0 -77.86815454639419,-10.6676807017211,0 -77.83567262323758,-10.67745967710176,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 1</name>
+			<Style>
+				<ListStyle>
+					<listItemType>checkHideChildren</listItemType>
+					<bgColor>00ffffff</bgColor>
+					<maxSnippetLines>2</maxSnippetLines>
+				</ListStyle>
+			</Style>
+			<Placemark id="0">
+				<name>25 KMH - 1</name>
+				<description>25 KMH - 1</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.02656500000001,-9.579833000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id12</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0235532204921,-9.58347909794152,0 -77.0233136523038,-9.583124029395689,0 -77.02242642838679,-9.582565915884439,0 -77.0230865835224,-9.581736789549099,0 -77.0234107338531,-9.581543816049271,0 -77.02362369585219,-9.58137294310324,0 -77.0239299425543,-9.58114237397694,0 -77.0242110614188,-9.580862373501169,0 -77.0244093396869,-9.58065797244879,0 -77.02462349074889,-9.580392706205449,0 -77.02502098630789,-9.580015487961351,0 -77.0251037568613,-9.579893756404919,0 -77.0252791253794,-9.579643809570809,0 -77.0255112363469,-9.579383886754851,0 -77.0257185949835,-9.57912096892581,0 -77.025964817122,-9.578731950806869,0 -77.0262222023195,-9.578482971728111,0 -77.02637293832819,-9.57821002095023,0 -77.02667568802759,-9.5779321750628,0 -77.0270350750521,-9.577658439687101,0 -77.0273220959707,-9.577375177171101,0 -77.02780881656911,-9.576599550494,0 -77.02802068078179,-9.576360409258911,0 -77.0285762623223,-9.57636431718049,0 -77.0288935873949,-9.576194422328619,0 -77.0294547836571,-9.576259189409329,0 -77.02974186290849,-9.576540450537889,0 -77.0296607745461,-9.57686317195301,0 -77.02969071810401,-9.57710679623511,0 -77.0299078439231,-9.57737192826862,0 -77.02955982677,-9.57807322036879,0 -77.0292330977385,-9.57863755137366,0 -77.028915922549,-9.57912567599171,0 -77.0286138157677,-9.57971614229675,0 -77.0282921890562,-9.580238999600811,0 -77.0281156433155,-9.5804770027231,0 -77.0279377955092,-9.580611999481009,0 -77.0275096791392,-9.58100555641084,0 -77.0273197536042,-9.58118348629251,0 -77.0271545407698,-9.58125918366359,0 -77.02703196619289,-9.58131696197897,0 -77.02684726412021,-9.58144268310296,0 -77.0266369688737,-9.581583799827531,0 -77.0263596843363,-9.581740464040751,0 -77.02596790554161,-9.5820061605774,0 -77.0257299994967,-9.58215036775308,0 -77.0250288607316,-9.582643145812749,0 -77.02464529970931,-9.58291650349142,0 -77.0235532204921,-9.58347909794152,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 10</name>
+			<Placemark id="0">
+				<name>25 KMH - 10</name>
+				<description>25 KMH - 10</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.04413599999999,-9.557893999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id70</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04455473798191,-9.559607767469652,0 -77.04414704221165,-9.559417330141958,0 -77.04415777104771,-9.559248052427826,0 -77.04305270093357,-9.558443982135609,0 -77.04289176839268,-9.55803136637951,0 -77.04318144696629,-9.557650489852847,0 -77.04471567052281,-9.557587010390304,0 -77.04486319201862,-9.557539400785606,0 -77.04482027667439,-9.55739392695223,0 -77.04463520425236,-9.557243163095656,0 -77.04447963612949,-9.557023629641192,0 -77.04401828669637,-9.556417902411372,0 -77.04390831612676,-9.55622217332153,0 -77.04396531306833,-9.55618382098667,0 -77.04402231000989,-9.55612430873439,0 -77.04415776156515,-9.556052894017908,0 -77.04444744013875,-9.556327972843521,0 -77.04475857638448,-9.556793490349582,0 -77.04521991633504,-9.557327776702389,0 -77.04525210284322,-9.557788002888234,0 -77.04489268683523,-9.558026050671144,0 -77.04359986209005,-9.558031340619994,0 -77.04346038722127,-9.558232358614967,0 -77.04401292227834,-9.558634394248667,0 -77.04446889781087,-9.55899410993929,0 -77.04461910151571,-9.559152807917194,0 -77.04464592360586,-9.559300925963125,0 -77.04455473798191,-9.559607767469652,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 11</name>
+			<Placemark id="0">
+				<name>25 KMH - 11</name>
+				<description>25 KMH - 11</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.04921,-9.542714,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id1</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04998374601881,-9.545846125399974,0 -77.0498151226288,-9.545814907907619,0 -77.04978060968955,-9.545741369297101,0 -77.04954521339545,-9.54521427035109,0 -77.04931112380802,-9.544840419284236,0 -77.0490770342206,-9.544530049715711,0 -77.04847224809777,-9.543806349840917,0 -77.04827207906703,-9.543191355347791,0 -77.04784914364097,-9.542292575094509,0 -77.04759069721555,-9.541619361052529,0 -77.04752048260117,-9.541388557695566,0 -77.04749586554004,-9.541176269919948,0 -77.04721906975597,-9.541215875784534,0 -77.04713242646578,-9.541140272494259,0 -77.04704747942463,-9.540982700808273,0 -77.04698890463936,-9.540629327544918,0 -77.04705550089585,-9.540300728466466,0 -77.04749483095247,-9.539812843777467,0 -77.04768596644698,-9.539090042098147,0 -77.0476553805704,-9.538910379157748,0 -77.04771867200938,-9.538746586868019,0 -77.04787181745034,-9.538709760496326,0 -77.04802496289132,-9.538694095117814,0 -77.04805191474502,-9.53877917241797,0 -77.04806807288089,-9.538827001307155,0 -77.04806813776267,-9.538893346051287,0 -77.04817032123233,-9.539150789535705,0 -77.04825130655701,-9.539308584936197,0 -77.04823870893472,-9.539544434065915,0 -77.04799812354622,-9.540174405108706,0 -77.04807292366337,-9.540501415850146,0 -77.04834694368884,-9.540716060110052,0 -77.04869140894066,-9.540668558080963,0 -77.04911728854944,-9.540902958951163,0 -77.04962652088096,-9.541432071312748,0 -77.04983894373566,-9.541660399718923,0 -77.05096503143187,-9.543358333179578,0 -77.05143841362576,-9.544199644135736,0 -77.05122050114323,-9.544641579216687,0 -77.05103141819444,-9.544984407963227,0 -77.05102266973466,-9.544991115624187,0 -77.05068966733546,-9.545440339918182,0 -77.05024589094637,-9.545802757616771,0 -77.04998374601881,-9.545846125399974,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 12</name>
+			<Placemark id="0">
+				<name>25 KMH - 12</name>
+				<description>25 KMH - 12</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.04651,-9.561992999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id8</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04489450841714,-9.566133124531278,0 -77.04464669181468,-9.565884881377986,0 -77.04452546572247,-9.565850686807432,0 -77.04449435697553,-9.565796560726683,0 -77.04443642613842,-9.565742434637311,0 -77.04395152176954,-9.565079317685363,0 -77.04483576404641,-9.56449309080082,0 -77.04578214063531,-9.563877452487301,0 -77.04606969690542,-9.56366336132813,0 -77.04619682016232,-9.56343439975455,0 -77.04621704018018,-9.563259839787699,0 -77.0462549897556,-9.5628087579191,0 -77.04634504417601,-9.562555798408949,0 -77.04616003824242,-9.562415726237729,0 -77.04596992327498,-9.56242762757293,0 -77.04567816670459,-9.56182236499224,0 -77.04546374898331,-9.5614205211856,0 -77.04466447298478,-9.56072391341397,0 -77.04419705824171,-9.560289224187962,0 -77.04452799390481,-9.559727430934059,0 -77.0445453753436,-9.55913772470104,0 -77.04493522514491,-9.55842913141954,0 -77.0451028997465,-9.557990494290051,0 -77.04525072926629,-9.55752004739805,0 -77.04545637406278,-9.557396947023779,0 -77.04636716733353,-9.558883922821529,0 -77.04724920792773,-9.560757045108041,0 -77.04741756116709,-9.56095616961286,0 -77.04820851421687,-9.561100328565811,0 -77.05003579037668,-9.56016598981731,0 -77.05024809346037,-9.560248079352849,0 -77.04995117528068,-9.56100946501701,0 -77.04879772329122,-9.56212996591854,0 -77.04821389484368,-9.562985920054331,0 -77.04755333096489,-9.56431995242532,0 -77.04634296234497,-9.56565809951892,0 -77.04489450841714,-9.566133124531278,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 13</name>
+			<Placemark id="0">
+				<name>25 KMH - 13</name>
+				<description>25 KMH - 13</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.178865,-10.102762,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id50</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.177990827184,-10.1057449479758,0 -78.177174352666,-10.1052124747316,0 -78.1769182209585,-10.1046687812268,0 -78.17653605495479,-10.1037714708592,0 -78.1763508233161,-10.1033332352501,0 -78.1763052995086,-10.1020987915395,0 -78.1765867373491,-10.101484454361,0 -78.1769967378781,-10.1009814356583,0 -78.1774048276048,-10.1007127093025,0 -78.1780720255295,-10.1004208497655,0 -78.17916564769151,-10.1002629519364,0 -78.17935210978141,-10.1001470525794,0 -78.1800641355217,-10.0998769067751,0 -78.180519964193,-10.1001219044505,0 -78.18084765663281,-10.1005182952664,0 -78.1813979573438,-10.1022130821101,0 -78.1814206389934,-10.103038326119,0 -78.1806292838489,-10.1047010067348,0 -78.177990827184,-10.1057449479758,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 14</name>
+			<Placemark id="0">
+				<name>25 KMH - 14</name>
+				<description>25 KMH - 14</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.037336,-9.564985999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.03638861007244,-9.565534887282535,0 -77.03617403335124,-9.565474054207931,0 -77.0363456947282,-9.56523865655585,0 -77.03812131709606,-9.564445180123625,0 -77.03817496127635,-9.564466339519178,0 -77.03820714778453,-9.564498078610045,0 -77.03829431957752,-9.564564201706499,0 -77.03835533983261,-9.564625034943885,0 -77.03840563125163,-9.564701737705935,0 -77.03837880916149,-9.564759925996643,0 -77.03638861007244,-9.565534887282535,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 15</name>
+			<Placemark id="0">
+				<name>25 KMH - 15</name>
+				<description>25 KMH - 15</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.041325,-9.562334,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id7</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04090380716696,-9.562749004441081,0 -77.04081797647848,-9.562627337284233,0 -77.04136782932653,-9.562132733394179,0 -77.04175674963369,-9.56192907275979,0 -77.04185062694921,-9.562040160393659,0 -77.0411639814414,-9.562608822713072,0 -77.04090380716696,-9.562749004441081,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 16</name>
+			<Placemark id="0">
+				<name>25 KMH - 16</name>
+				<description>25 KMH - 16</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.04316,-9.563235000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id9</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04266180867307,-9.565163792928464,0 -77.04215755337827,-9.565132053899744,0 -77.04022099846952,-9.564476113309441,0 -77.04012175673596,-9.564423214819598,0 -77.04007347697369,-9.564320062740752,0 -77.04006140703312,-9.564271131615483,0 -77.04002519721142,-9.564201041072423,0 -77.04003324383847,-9.564141530222628,0 -77.04000776285282,-9.564091937839851,0 -77.03997691744915,-9.564034410666757,0 -77.03994674259773,-9.564002671532622,0 -77.03990047449223,-9.563965642539035,0 -77.0398937689697,-9.563896874397408,0 -77.04056968564146,-9.563174808070713,0 -77.04154600972288,-9.562540023220462,0 -77.04301586026304,-9.561556104361173,0 -77.04327335232847,-9.56145030646489,0 -77.04367031926267,-9.561154072180232,0 -77.0445393549835,-9.561164651980556,0 -77.04558005208126,-9.56186820796349,0 -77.04581608647457,-9.562357522356741,0 -77.04609503621212,-9.562623338799613,0 -77.04598774785154,-9.563132489117551,0 -77.04519381398313,-9.563989446892512,0 -77.04266180867307,-9.565163792928464,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 17</name>
+			<Placemark id="0">
+				<name>25 KMH - 17</name>
+				<description>25 KMH - 17</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.014588,-9.596496,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id10</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.01452502528316,-9.598461587954523,0 -77.01446869889385,-9.596530981042214,0 -77.01437213936931,-9.595853943684418,0 -77.01433995286114,-9.595309139203465,0 -77.01457196394092,-9.595224509302598,0 -77.01480933943874,-9.595235088041369,0 -77.01477983513958,-9.595592120281035,0 -77.01474228421337,-9.596187173177997,0 -77.01473155537731,-9.597461905200568,0 -77.01467791119701,-9.597660255187884,0 -77.01466181794292,-9.597996127568299,0 -77.01464706579334,-9.598300263688527,0 -77.01452502528316,-9.598461587954523,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 2</name>
+			<Placemark id="0">
+				<name>25 KMH - 2</name>
+				<description>25 KMH - 2</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.030615,-9.573843,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id11</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.030632964375,-9.57496895066684,0 -77.0306313555206,-9.574691851365211,0 -77.0305793021776,-9.574416487190691,0 -77.03040987693591,-9.574105089273671,0 -77.0303664542057,-9.573854343559271,0 -77.0303147595265,-9.573574026923991,0 -77.03032085651721,-9.573305377585861,0 -77.0304525277882,-9.573067873516051,0 -77.03053514925119,-9.57316872364232,0 -77.03060157752959,-9.573159050258081,0 -77.03068851148549,-9.57318821384453,0 -77.030769020826,-9.57321520224334,0 -77.03091064149299,-9.57338151555896,0 -77.0308047914515,-9.57393870105645,0 -77.0308170049972,-9.5742331436177,0 -77.0308085765005,-9.57451511666849,0 -77.030782725842,-9.574676194319681,0 -77.0307268056806,-9.57486492415374,0 -77.0307229517128,-9.5749330428087,0 -77.030632964375,-9.57496895066684,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 3</name>
+			<Placemark id="0">
+				<name>25 KMH - 3</name>
+				<description>25 KMH - 3</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.029236,-9.575284999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id3</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0283338932545,-9.576347668418011,0 -77.0278033366737,-9.57631514630444,0 -77.0278781179769,-9.57608353749224,0 -77.02794296226121,-9.575819225414,0 -77.0280291607304,-9.57548097896044,0 -77.02817288912399,-9.575261646308119,0 -77.0282977296238,-9.57493079339652,0 -77.02843514022091,-9.57459030063645,0 -77.0285213338379,-9.57445682323422,0 -77.0286614209187,-9.574381929246908,0 -77.02899951010711,-9.57420159075223,0 -77.0291470970292,-9.574049267504719,0 -77.0292142176808,-9.5739339721005,0 -77.0293365502642,-9.5738895026428,0 -77.0295485472617,-9.574229753889281,0 -77.0299843292006,-9.574421652565871,0 -77.0303234424259,-9.57465581120262,0 -77.0305696402044,-9.574678626322459,0 -77.0306200880331,-9.574693228836299,0 -77.03062808229279,-9.57530036753149,0 -77.03044278586999,-9.575477560878131,0 -77.0302496092289,-9.57578583726276,0 -77.0298900902477,-9.576149255661971,0 -77.02963085713399,-9.5762197952821,0 -77.0294830665632,-9.576248169967441,0 -77.02922902981319,-9.5762303190838,0 -77.02898978306629,-9.576195104007139,0 -77.0288569059028,-9.57618613278188,0 -77.0285700064734,-9.57634178309074,0 -77.0283338932545,-9.576347668418011,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 4</name>
+			<Placemark id="0">
+				<name>25 KMH - 4</name>
+				<description>25 KMH - 4</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.031206,-9.572093000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id4</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0297941730574,-9.57342539621888,0 -77.0297900111415,-9.573425278606241,0 -77.02968481038801,-9.57341088538376,0 -77.0296119094026,-9.57335919533536,0 -77.0295495646921,-9.57328213234268,0 -77.0294967022726,-9.57319615072482,0 -77.0294638489551,-9.573136932579979,0 -77.02950431546634,-9.573078344227984,0 -77.02953941755953,-9.573030335296949,0 -77.02955884791982,-9.572933177921753,0 -77.0296901007472,-9.57280135181465,0 -77.0298867334826,-9.57265647134694,0 -77.02981247583079,-9.57238786947849,0 -77.0298070117074,-9.572197353439821,0 -77.0298223758542,-9.571892798549539,0 -77.0298085405407,-9.571654102396071,0 -77.02996548966151,-9.571321898185341,0 -77.0301063555516,-9.57109830714095,0 -77.03029248505121,-9.5709638977163,0 -77.0305854850188,-9.57086648074398,0 -77.0309106972505,-9.571006015698391,0 -77.03135142341711,-9.57125117482153,0 -77.0316032368748,-9.57154611735208,0 -77.03165141541869,-9.571686888610399,0 -77.0320015920658,-9.571832767873429,0 -77.03227802970279,-9.571817750667041,0 -77.0324378856569,-9.5717815150446,0 -77.0326706374794,-9.571786124798869,0 -77.0329591731909,-9.572147891559091,0 -77.0329541407561,-9.57208003243805,0 -77.03312325169151,-9.57203159984698,0 -77.0332860684918,-9.57199738428935,0 -77.0334210035785,-9.57198902465205,0 -77.03361649322591,-9.572136060703967,0 -77.03366405757718,-9.572340868294933,0 -77.03366334216619,-9.57256683465369,0 -77.03372070562931,-9.57284429570794,0 -77.033724912663,-9.573159491187541,0 -77.0336817461541,-9.57313765495747,0 -77.0335807976283,-9.5731739151343,0 -77.03340884967839,-9.57305862676697,0 -77.03314344562951,-9.572891959225631,0 -77.0328475943375,-9.572482456475971,0 -77.032579816569,-9.572130359562181,0 -77.03237311528591,-9.57210383398594,0 -77.0320708519944,-9.57211304291746,0 -77.0318288603152,-9.57209415070813,0 -77.0315091917153,-9.572141067190151,0 -77.031371214825,-9.57223859320011,0 -77.0311676412302,-9.572419669073,0 -77.03106615277289,-9.572513672828981,0 -77.0309860351596,-9.572525305585639,0 -77.03092292545411,-9.57251910783957,0 -77.0307992024064,-9.57257167608843,0 -77.0306579115894,-9.57265466172047,0 -77.03054771984991,-9.572733976792399,0 -77.03029056786799,-9.57300434784127,0 -77.0300921707023,-9.573160000577561,0 -77.029922476294,-9.57333691717607,0 -77.0297941730574,-9.57342539621888,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 5</name>
+			<Placemark id="0">
+				<name>25 KMH - 5</name>
+				<description>25 KMH - 5</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.031037,-9.572918,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id150</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0308789320644,-9.573334073334481,0 -77.0308568998215,-9.573314205024269,0 -77.030815196937,-9.57325552481592,0 -77.03076536649,-9.573208440299391,0 -77.0306004729019,-9.573144086678541,0 -77.0305447277137,-9.57315651668716,0 -77.0304962396885,-9.573082632563359,0 -77.0304939817583,-9.57301312236331,0 -77.03049040437079,-9.57300508014902,0 -77.0305031474449,-9.57291203751767,0 -77.0305386287905,-9.57282385254717,0 -77.0306046318982,-9.572738869980791,0 -77.0306753160483,-9.57265052910021,0 -77.0308240294777,-9.57259380866746,0 -77.03092269370489,-9.57253628740966,0 -77.03114593840419,-9.572604047558301,0 -77.031305685509,-9.57276253944792,0 -77.03140545091659,-9.572760877056719,0 -77.0316389331791,-9.572624597234681,0 -77.03178980544941,-9.572659560589139,0 -77.031748590969,-9.57279842427824,0 -77.03164574521669,-9.572838119652619,0 -77.0315582748831,-9.57288797895351,0 -77.0314843795597,-9.57294081214129,0 -77.0313783456961,-9.57305756494147,0 -77.0313259703982,-9.57314440877272,0 -77.031212771056,-9.57324868527447,0 -77.0310995064272,-9.57329481191376,0 -77.0309669997099,-9.573305870600191,0 -77.0308789320644,-9.573334073334481,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 6</name>
+			<Placemark id="0">
+				<name>25 KMH - 6</name>
+				<description>25 KMH - 6</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.161492,-10.113542,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id16</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.1608193597738,-10.1149475193029,0 -78.1607345479914,-10.1146818249848,0 -78.1602605193568,-10.1140310338687,0 -78.1600122543329,-10.1138022532266,0 -78.1601272271558,-10.1135751221858,0 -78.1603168684842,-10.1129671653306,0 -78.1619215609141,-10.1122809554866,0 -78.1619561005998,-10.112375830223,0 -78.1622641501516,-10.1122684562438,0 -78.16283305394541,-10.1133184373252,0 -78.1630850328341,-10.1138745368697,0 -78.162622605892,-10.1140122612481,0 -78.1614380393781,-10.114584946947,0 -78.16107652592039,-10.1149198005046,0 -78.1608193597738,-10.1149475193029,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 7</name>
+			<Placemark id="0">
+				<name>25 KMH - 7</name>
+				<description>25 KMH - 7</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.037665,-9.562071,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0391230448251,-9.56367245219657,0 -77.03897274184105,-9.563543067247108,0 -77.03887608303725,-9.563466580895305,0 -77.03881552756899,-9.563431303139744,0 -77.03876033651876,-9.563364286186804,0 -77.0383763690988,-9.56316677381994,0 -77.0381143288769,-9.56318260255266,0 -77.0380417993578,-9.5632193542101,0 -77.03798262748801,-9.563300660881669,0 -77.037929595645,-9.56329333032801,0 -77.0376825803886,-9.563324214329731,0 -77.03752620357234,-9.563308129547062,0 -77.03739933105523,-9.563239146089568,0 -77.03728044737782,-9.563249472109705,0 -77.0371722925365,-9.56321747918699,0 -77.0370312231999,-9.56314538583227,0 -77.0367542329941,-9.562940167014711,0 -77.03635623751261,-9.562719732675751,0 -77.0360362154653,-9.56255280863866,0 -77.0355058907829,-9.562101046047539,0 -77.03488712047908,-9.56211641916731,0 -77.03476570503804,-9.56146625200817,0 -77.03472086468916,-9.561185860561174,0 -77.0347523774099,-9.560982759317939,0 -77.0350564805684,-9.56091009453371,0 -77.0353885206024,-9.561139404316179,0 -77.0358383520085,-9.561163637720361,0 -77.0362207080172,-9.56104132311772,0 -77.03608138672639,-9.56089200855623,0 -77.0361777005979,-9.56058705301206,0 -77.0373304980674,-9.560857324116739,0 -77.0379597253946,-9.56120271232469,0 -77.0386664869911,-9.561375010303671,0 -77.03914467022319,-9.561392789449171,0 -77.0394710851749,-9.56126743701239,0 -77.0398116080822,-9.5611422576794,0 -77.04004083164489,-9.5617533126692,0 -77.0401348070618,-9.562098618872531,0 -77.04022483183751,-9.562385242803281,0 -77.0402590899522,-9.562550962086011,0 -77.04005176469811,-9.56281889923457,0 -77.0399041181761,-9.5629856427768,0 -77.03965653107019,-9.56328595137564,0 -77.0393724587386,-9.56364495979471,0 -77.0391230448251,-9.56367245219657,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 8</name>
+			<Placemark id="0">
+				<name>25 KMH - 8</name>
+				<description>25 KMH - 8</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.03536099999999,-9.564213000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id180</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0354896813963,-9.567338472639079,0 -77.0353040916085,-9.567290055699861,0 -77.0351804864995,-9.56712320952016,0 -77.03504385391921,-9.56702100337507,0 -77.0347477455027,-9.566715590694731,0 -77.0347248948397,-9.5666950515102,0 -77.0347087792032,-9.566668414600899,0 -77.03467795474489,-9.56637119682703,0 -77.03465959645661,-9.56600252314467,0 -77.0346538216328,-9.56565817662543,0 -77.0348173793505,-9.56527512149615,0 -77.0345647570296,-9.56477224224095,0 -77.0347212967167,-9.5642670249168,0 -77.0342512991779,-9.56389176439683,0 -77.0339330814236,-9.563292960466971,0 -77.0340244698167,-9.563091859468219,0 -77.0341642016929,-9.56280965047366,0 -77.0344955963274,-9.56253318788271,0 -77.03487426856979,-9.56246115030544,0 -77.0350521829627,-9.562430705032931,0 -77.0352535273759,-9.56219994502081,0 -77.0354545261338,-9.562311146528129,0 -77.03570350468731,-9.562478442269819,0 -77.0361139377391,-9.562683633454469,0 -77.036633241603,-9.56293053817776,0 -77.0368878672422,-9.56307238941177,0 -77.03713981982391,-9.563245029867099,0 -77.03702652850269,-9.56336613943297,0 -77.03621323418059,-9.564467496713631,0 -77.0360716211207,-9.56468302576423,0 -77.0358881795666,-9.56502739135496,0 -77.0357888961429,-9.565226410091441,0 -77.03564620346189,-9.56564103085973,0 -77.0355414401001,-9.5660726942578,0 -77.0354944636652,-9.56650631786254,0 -77.0355015291544,-9.5667769916942,0 -77.0355072004247,-9.56700770547951,0 -77.0355457803018,-9.56719351061574,0 -77.0354896813963,-9.567338472639079,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>25 KMH - 9</name>
+			<Placemark id="0">
+				<name>25 KMH - 9</name>
+				<description>25 KMH - 9</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.037665,-9.566713,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id19</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.03536871696561,-9.569598646053141,0 -77.0352486650751,-9.56950249229396,0 -77.0352679147362,-9.569173714399019,0 -77.03546852561119,-9.56899969372135,0 -77.03584469334901,-9.568361923496081,0 -77.035973037457,-9.567989298743329,0 -77.0360016713929,-9.567432358930731,0 -77.035967509393,-9.566791186862041,0 -77.0360437395412,-9.56600830330067,0 -77.0361707192763,-9.56552343948402,0 -77.0364492537942,-9.5655308152175,0 -77.03708594524841,-9.56538116266093,0 -77.0377352309259,-9.565103835688159,0 -77.038177800044,-9.564889825674991,0 -77.0382979940503,-9.56487885060174,0 -77.03888613018729,-9.564615809613811,0 -77.0392594332763,-9.56453763333622,0 -77.0396299734402,-9.564442583355991,0 -77.04014058393309,-9.56478594325432,0 -77.0402722955225,-9.56479657249244,0 -77.0407209122188,-9.56499510321118,0 -77.0408980757885,-9.565158212897209,0 -77.0411757958929,-9.56530795336178,0 -77.0408390614744,-9.56554436167481,0 -77.0403075116262,-9.565877649726239,0 -77.03883204688159,-9.56599345751691,0 -77.03852741961749,-9.566484430929959,0 -77.0380553515274,-9.567304693062869,0 -77.0379331083025,-9.56767941373011,0 -77.0379267885602,-9.568053649010571,0 -77.0378168716002,-9.568346342646819,0 -77.0376567098953,-9.568622077594149,0 -77.0374115087012,-9.56896448428663,0 -77.03726760526111,-9.56909674837161,0 -77.03661900333179,-9.5692050111659,0 -77.0360833828541,-9.569406300704699,0 -77.03567330735881,-9.569532650420131,0 -77.03547202769739,-9.569579129907019,0 -77.03536871696561,-9.569598646053141,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 1</name>
+			<Placemark id="0">
+				<name>45 KMH - 1</name>
+				<description>45 KMH - 1</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.17704000000001,-10.102492,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id20</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.17778081625539,-10.1059984793562,0 -78.17713524762507,-10.1055142450155,0 -78.17673471279147,-10.1047165429478,0 -78.17639018102557,-10.1039821947847,0 -78.17637055375451,-10.1039615463123,0 -78.17609679017153,-10.1032581978409,0 -78.17597473809872,-10.1023674402959,0 -78.1761347275758,-10.1015978373339,0 -78.1762764992344,-10.1013304214687,0 -78.17690823815821,-10.1006915641197,0 -78.17734297867833,-10.100457939844,0 -78.17796632308591,-10.1001369377446,0 -78.17829474357791,-10.1000535432113,0 -78.17870348594812,-10.1000365869103,0 -78.17905377180858,-10.1000065562267,0 -78.17920757941812,-10.1000512932861,0 -78.17915724276907,-10.1002460740178,0 -78.17803516717549,-10.1004002493373,0 -78.17738032842908,-10.1007002484452,0 -78.1769995666964,-10.1009520679316,0 -78.17654121548128,-10.1015162279366,0 -78.17628161578341,-10.1021048027676,0 -78.17630291021601,-10.1027957711493,0 -78.17636441382803,-10.10334551175895,0 -78.17644578452189,-10.1035233474581,0 -78.17677123623611,-10.10414480572247,0 -78.1771254003466,-10.10498934801565,0 -78.17724782227583,-10.10526058398584,0 -78.17753892345627,-10.1055069545997,0 -78.17797076906663,-10.1057853209716,0 -78.17778081625539,-10.1059984793562,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 10</name>
+			<Placemark id="0">
+				<name>45 KMH - 10</name>
+				<description>45 KMH - 10</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.042711,-9.552898000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0421322681492,-9.557229130017539,0 -77.04173842922012,-9.557158511986509,0 -77.04173032718688,-9.555943831751151,0 -77.04135887568782,-9.55546955314397,0 -77.04098224146458,-9.55490079778172,0 -77.04050014961041,-9.554359742376249,0 -77.04085736700262,-9.55391436356412,0 -77.04184330406667,-9.55403747444497,0 -77.0417649035092,-9.55335536530249,0 -77.04213374654552,-9.55218802767652,0 -77.04142847893183,-9.55102430780364,0 -77.04217670232958,-9.55005022762167,0 -77.04275852022818,-9.549118890854031,0 -77.04311552019249,-9.548892925256171,0 -77.04328004178467,-9.548917172089959,0 -77.0436190612669,-9.548943838096211,0 -77.04393600326199,-9.548939079753691,0 -77.04410100116922,-9.548927808719981,0 -77.04437833659075,-9.549061534629811,0 -77.04449621718163,-9.549116494868782,0 -77.04464494317619,-9.54920055057323,0 -77.04447831455099,-9.549684025700209,0 -77.04418445486817,-9.550452802860169,0 -77.04400654127608,-9.551095273867171,0 -77.04387190446971,-9.551573607180391,0 -77.04384073562017,-9.552444114166139,0 -77.04349438554959,-9.553293489136131,0 -77.04331539373601,-9.55382720516886,0 -77.04287512573057,-9.55471781329438,0 -77.04316339872173,-9.555025310778666,0 -77.04339696926797,-9.555297928945835,0 -77.0436361098981,-9.555494695454168,0 -77.04371968240537,-9.555612112061889,0 -77.04411916918764,-9.556015722522902,0 -77.043909875704,-9.556236042492904,0 -77.04313463611822,-9.556324112962519,0 -77.04288553982991,-9.55679222958206,0 -77.04260195714357,-9.55710338041774,0 -77.0421322681492,-9.557229130017539,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 11</name>
+			<Placemark id="0">
+				<name>45 KMH - 11</name>
+				<description>45 KMH - 11</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.156944,-10.101021,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id160</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.15964850434075,-10.11303912017702,0 -78.15871509560355,-10.1118350334172,0 -78.1600025559307,-10.10499066506741,0 -78.16206249245414,-10.10169517647924,0 -78.15665515908012,-10.0968363817101,0 -78.15412315377006,-10.09924466307299,0 -78.14764293679008,-10.10342742469149,0 -78.14065211024871,-10.10171267829622,0 -78.14103916068332,-10.10076090368477,0 -78.1413368689802,-10.10001484267336,0 -78.14164169922225,-10.09934480289968,0 -78.14200460494111,-10.09858208522991,0 -78.14247616041197,-10.0977556167495,0 -78.14807209023246,-10.09827290258732,0 -78.15335067757377,-10.09337180497459,0 -78.15832885750541,-10.09324505145998,0 -78.16450866707572,-10.0957378614177,0 -78.16678318032035,-10.09954041568161,0 -78.1675127411724,-10.10376542325461,0 -78.1640365982891,-10.1110745552437,0 -78.15964850434075,-10.11303912017702,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 12</name>
+			<Placemark id="0">
+				<name>45 KMH - 12</name>
+				<description>45 KMH - 12</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.03474300000001,-9.569483999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id17</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0342622056184,-9.5699609153439,0 -77.03419509462334,-9.569772540130057,0 -77.03430867592257,-9.569690552906149,0 -77.03438284148309,-9.569625336373189,0 -77.0345318647437,-9.56950880009914,0 -77.03483192423811,-9.56928497201975,0 -77.03506797401313,-9.56915905105528,0 -77.03511122847894,-9.569119636142492,0 -77.03515113018348,-9.569088817112547,0 -77.03522355751775,-9.569009326043867,0 -77.0352586006133,-9.569103961453999,0 -77.0352311615121,-9.569267568644269,0 -77.03497774233399,-9.56945073641845,0 -77.0348425266375,-9.569528321144199,0 -77.0346697895984,-9.56964951957409,0 -77.034513240357,-9.569742361647171,0 -77.0342622056184,-9.5699609153439,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 13</name>
+			<Placemark id="0">
+				<name>45 KMH - 13</name>
+				<description>45 KMH - 13</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.03808600000001,-9.564190999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id24</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.03640419654153,-9.565203163148821,0 -77.03634620760232,-9.56516840516438,0 -77.0369877304268,-9.56417333101232,0 -77.03742105073331,-9.563707271820411,0 -77.03748959189318,-9.563532447804301,0 -77.03739083448693,-9.5633460018731,0 -77.03794274212919,-9.56332007967,0 -77.03800612777212,-9.56330690040218,0 -77.03823746872661,-9.563490411700011,0 -77.03857198843031,-9.56360824435963,0 -77.03875642309038,-9.56375277312835,0 -77.03894664645651,-9.56407054218395,0 -77.03895568438134,-9.56407524527218,0 -77.0391537880958,-9.564309516642551,0 -77.03951513217089,-9.564159841062899,0 -77.0398722335018,-9.563950035777051,0 -77.04000557458909,-9.56406430112157,0 -77.04009849054756,-9.564349722313306,0 -77.04013027962901,-9.564586465795539,0 -77.03978438959803,-9.564405802061,0 -77.0396236743108,-9.564421718492699,0 -77.03938969576632,-9.564464017599329,0 -77.03917551564422,-9.564520067341411,0 -77.03897655307202,-9.56456927558351,0 -77.03881329782899,-9.564617647609531,0 -77.03863799701651,-9.56471989068452,0 -77.03848164575447,-9.564757095409799,0 -77.038148608938,-9.564431764239052,0 -77.03797225918771,-9.564489352795412,0 -77.03768195966256,-9.564640009581247,0 -77.03717533376522,-9.564817109436136,0 -77.03685519594887,-9.564931410896136,0 -77.03675358743681,-9.564960550295154,0 -77.03669201612206,-9.565049351462902,0 -77.03656602511501,-9.56508607533187,0 -77.03640419654153,-9.565203163148821,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 14</name>
+			<Placemark id="0">
+				<name>45 KMH - 14</name>
+				<description>45 KMH - 14</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.042089,-9.559915,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04085118947114,-9.562859341885874,0 -77.04042414914647,-9.56275647610466,0 -77.04026012364722,-9.56243657712799,0 -77.04013974342382,-9.5620964073374,0 -77.04004082087255,-9.56175623720657,0 -77.03984139811507,-9.561123789466899,0 -77.04030887870141,-9.561088607867241,0 -77.0405976706349,-9.560982216025829,0 -77.04087933964348,-9.560163853035959,0 -77.04078505140291,-9.559086490851531,0 -77.0410694764833,-9.5586081760772,0 -77.0411621580181,-9.557046336803531,0 -77.04209781699029,-9.55727071452587,0 -77.04263064110779,-9.55712002275226,0 -77.04267994544,-9.557216040239641,0 -77.04274850856075,-9.557304005064147,0 -77.04293177242243,-9.557489032713351,0 -77.04300434726895,-9.557646691360741,0 -77.04272061444016,-9.55803004608919,0 -77.04284054634047,-9.558374314258877,0 -77.04293352299226,-9.558509277590414,0 -77.0430713350321,-9.558649192593391,0 -77.04345725659516,-9.558735418442668,0 -77.04361651041933,-9.558900617946183,0 -77.04384929292024,-9.559061607728982,0 -77.04395067126342,-9.559180558414202,0 -77.04417860653831,-9.559480295775245,0 -77.04433870869084,-9.559517944319563,0 -77.04455245502368,-9.559592622333403,0 -77.04437909878142,-9.559968579813646,0 -77.04417892044899,-9.560328667139514,0 -77.0443754435484,-9.560469787350485,0 -77.04452501562673,-9.5606912832266,0 -77.04464478354379,-9.560790441202078,0 -77.04467418173857,-9.560862654526453,0 -77.044519988194,-9.560886897129372,0 -77.04435756575214,-9.560873387192069,0 -77.04428155324888,-9.560854880284404,0 -77.04414942479627,-9.560817591161126,0 -77.04400995770919,-9.560787728856189,0 -77.04385487695959,-9.560821410883715,0 -77.04379594445851,-9.56076009133186,0 -77.04367961063832,-9.560765275429203,0 -77.04356716264385,-9.560727477181548,0 -77.04338557036516,-9.560793960226999,0 -77.0431131664555,-9.561049263796164,0 -77.04296077061787,-9.561218595233987,0 -77.04271339276903,-9.56146299864834,0 -77.04262300800411,-9.561611040023196,0 -77.04257780810536,-9.561703116518496,0 -77.04245160802731,-9.561818419111999,0 -77.04230750216533,-9.561943036762965,0 -77.04212467276466,-9.562053819232279,0 -77.0418947284291,-9.56209533747575,0 -77.04170327649206,-9.561832364139246,0 -77.04142414083685,-9.561882948818724,0 -77.04114521370354,-9.562056658224293,0 -77.0408057165539,-9.562610891351181,0 -77.04092505424047,-9.56277146162682,0 -77.04085118947114,-9.562859341885874,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 15</name>
+			<Placemark id="0">
+				<name>45 KMH - 15</name>
+				<description>45 KMH - 15</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.145105,-10.12263,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id26</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.15290499398702,-10.13032169774954,0 -78.14692903230184,-10.13027945144262,0 -78.13625384042257,-10.1301632740699,0 -78.13331413934225,-10.12997316555101,0 -78.13159752557272,-10.12532603337932,0 -78.12812138268941,-10.12372064480263,0 -78.1282397755465,-10.12287337639642,0 -78.13298705620117,-10.11559409707442,0 -78.13593197534078,-10.11613718757489,0 -78.13878584573263,-10.11998174816888,0 -78.14254093835348,-10.11917904151779,0 -78.14505148599142,-10.11801722570492,0 -78.14899969766134,-10.11691877779725,0 -78.15449286172384,-10.11550346437646,0 -78.15711069772237,-10.11535559545023,0 -78.15966416070455,-10.11389802667726,0 -78.16052246758932,-10.11514435400893,0 -78.16073704431051,-10.11524997474696,0 -78.16288281152242,-10.11400364782512,0 -78.16408444116109,-10.11203908879029,0 -78.16509295175069,-10.11199684007693,0 -78.16616583535665,-10.11248269994509,0 -78.16717025454682,-10.11341364395835,0 -78.16703077967804,-10.1145860385208,0 -78.16450950320404,-10.11452266595117,0 -78.16391941722077,-10.11496627367609,0 -78.16295382197541,-10.11606472826263,0 -78.16074368174714,-10.11836724587611,0 -78.15999266322297,-10.1196452416457,0 -78.15854427035492,-10.12111334620908,0 -78.15432783778351,-10.12139851682026,0 -78.15473330878534,-10.12314093812115,0 -78.15472889611715,-10.12638220569372,0 -78.15471816728109,-10.12804038921209,0 -78.15432120034689,-10.12979361851303,0 -78.15290499398702,-10.13032169774954,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 2</name>
+			<Placemark id="0">
+				<name>45 KMH - 2</name>
+				<description>45 KMH - 2</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.02831,-9.579650000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id27</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0250434493171,-9.58313651979325,0 -77.0248555971264,-9.58279448368488,0 -77.0257449744108,-9.582157989910741,0 -77.02646374104511,-9.581708134637569,0 -77.0272732694135,-9.581232248710011,0 -77.027776116498,-9.58078182859099,0 -77.0281324681108,-9.58049778227549,0 -77.02836661666809,-9.58015494857456,0 -77.0284495168421,-9.580015703639599,0 -77.0286326028116,-9.579714275566911,0 -77.02876949382571,-9.579501267698991,0 -77.02884736111341,-9.57933908191966,0 -77.02896511474501,-9.57915160525573,0 -77.0291744125208,-9.57880697922096,0 -77.029388734389,-9.57846859124319,0 -77.0295555406737,-9.57815462915547,0 -77.0299430484809,-9.57737512024168,0 -77.03006689108101,-9.57692851828255,0 -77.0301615880082,-9.576680925228111,0 -77.0303052151279,-9.57622892357112,0 -77.0306338984056,-9.57530387806978,0 -77.0307982738606,-9.575433143617021,0 -77.030787911799,-9.57550784594388,0 -77.0303701718465,-9.57681368577752,0 -77.0300038093029,-9.57781019200622,0 -77.0296664638341,-9.57856877451826,0 -77.0285393491545,-9.58032185481094,0 -77.027886173596,-9.58104121434511,0 -77.02731537854601,-9.581448786400831,0 -77.0266461493004,-9.581865740705981,0 -77.02577422058739,-9.582429623039321,0 -77.0250434493171,-9.58313651979325,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 3</name>
+			<Placemark id="0">
+				<name>45 KMH - 3</name>
+				<description>45 KMH - 3</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.032022,-9.573485,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0308012613839,-9.57542042264817,0 -77.0306381305261,-9.57529777776177,0 -77.0306367174321,-9.57522887895861,0 -77.0306407023717,-9.575157155069929,0 -77.0306347145582,-9.57506552148047,0 -77.0306356599048,-9.57497454429774,0 -77.030669861917,-9.57496328669486,0 -77.0307192541722,-9.5749438530875,0 -77.03075619936909,-9.57492183672492,0 -77.03084394057259,-9.574777836159649,0 -77.0309243834495,-9.574403604825291,0 -77.0310485335402,-9.57413248744842,0 -77.0310963847392,-9.57397477432332,0 -77.031156053674,-9.573809587956189,0 -77.0312316624987,-9.573428973134639,0 -77.0313833777474,-9.573167030780461,0 -77.0315132080693,-9.572944608871291,0 -77.03163271609699,-9.572862069607419,0 -77.031710513993,-9.572840908477019,0 -77.03176560802,-9.572805803348521,0 -77.0318057898026,-9.572595754954801,0 -77.0318646042426,-9.57258186621409,0 -77.0320773274469,-9.57256906291955,0 -77.032305517217,-9.572598556322831,0 -77.032662133838,-9.57267676353556,0 -77.0329246419284,-9.57283669050654,0 -77.03309030937849,-9.57305777968573,0 -77.0332229532878,-9.573184657263131,0 -77.0334196441959,-9.573289332969541,0 -77.03355891409549,-9.5733176327858,0 -77.0337001613761,-9.573156181885309,0 -77.0338475750751,-9.57329311902209,0 -77.03378972522813,-9.573402566919311,0 -77.0337320202719,-9.573443563731388,0 -77.03366895089765,-9.573476625975902,0 -77.03347243610042,-9.573533065179873,0 -77.03325135796311,-9.57346451224287,0 -77.03318317451513,-9.573426103589178,0 -77.03308721526994,-9.573389988477865,0 -77.03290803530609,-9.573280928230499,0 -77.0328012647561,-9.573170945384961,0 -77.03247861924029,-9.57296302478267,0 -77.0322043521096,-9.57286081781321,0 -77.0319073715783,-9.572951327464381,0 -77.0317394952686,-9.57306605827447,0 -77.03166334223241,-9.57314502018799,0 -77.03147614649021,-9.57339400264507,0 -77.03133524983591,-9.57379702197457,0 -77.0310760134273,-9.574525359323349,0 -77.03100528741081,-9.57485462153044,0 -77.03085609888061,-9.575229339301091,0 -77.0308012613839,-9.57542042264817,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 4</name>
+			<Placemark id="0">
+				<name>45 KMH - 4</name>
+				<description>45 KMH - 4</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.033788,-9.571446,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id110</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0338651338762,-9.573291696475239,0 -77.03372523728299,-9.573169538781279,0 -77.0337407630379,-9.573073983833551,0 -77.0337346081302,-9.57291978783968,0 -77.0336698972372,-9.572489574970509,0 -77.03358365844041,-9.57202133387381,0 -77.033553281428,-9.57159231771751,0 -77.0335525719123,-9.57110364316598,0 -77.03363991846889,-9.570655534019661,0 -77.0337721710022,-9.570267991288571,0 -77.03390541880179,-9.570129064262082,0 -77.03400111567518,-9.570032455278326,0 -77.03403139115873,-9.569962587728305,0 -77.03407507768739,-9.569929748511894,0 -77.03410682454302,-9.569863571262946,0 -77.03420161251525,-9.569769235266131,0 -77.03426541565977,-9.569986218588669,0 -77.0340255992994,-9.57036166781432,0 -77.0338730785183,-9.57061576145264,0 -77.0338079562012,-9.57084950049334,0 -77.03377382521271,-9.57097739993738,0 -77.0337840077451,-9.5717426939277,0 -77.03382321444531,-9.57201510002419,0 -77.0338463378781,-9.57228673707813,0 -77.03387787833771,-9.57262361085116,0 -77.0338960945799,-9.57280904224158,0 -77.03390748048589,-9.572939896971761,0 -77.0339205726181,-9.57305478524477,0 -77.0339125839143,-9.573148879303471,0 -77.03388289158551,-9.57322984024851,0 -77.0338651338762,-9.573291696475239,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 5</name>
+			<Placemark id="0">
+				<name>45 KMH - 5</name>
+				<description>45 KMH - 5</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.035691,-9.567938,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id30</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0352804295229,-9.5691481667102,0 -77.0352163852196,-9.568985718727131,0 -77.03526611673129,-9.56892271850205,0 -77.0353831514405,-9.56875659717735,0 -77.03549038620081,-9.56856786336845,0 -77.035578722878,-9.56842380804474,0 -77.03568545849321,-9.568088344288689,0 -77.0357433114427,-9.567837515887501,0 -77.0357277390582,-9.56767853473951,0 -77.03565397762981,-9.567565472871721,0 -77.0355519028704,-9.567449645415561,0 -77.0354949275786,-9.567341866321829,0 -77.03554649068219,-9.56720795943731,0 -77.0356149702979,-9.567143507473959,0 -77.0358063801102,-9.567119644724601,0 -77.0359429800657,-9.567109171110401,0 -77.0359688492931,-9.567568213695919,0 -77.0359502801076,-9.56772912105412,0 -77.0358804627418,-9.568006919618529,0 -77.03584299543731,-9.568171693097259,0 -77.0357865555038,-9.56833222719105,0 -77.03570726142421,-9.56851163737111,0 -77.0355721261771,-9.568761153719979,0 -77.0354464037182,-9.56894736019486,0 -77.03539540821529,-9.569018751144251,0 -77.0352804295229,-9.5691481667102,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 6</name>
+			<Placemark id="0">
+				<name>45 KMH - 6</name>
+				<description>45 KMH - 6</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.036287,-9.565125999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0355786596684,-9.567143785657681,0 -77.03553890806511,-9.567014461895409,0 -77.03551800673689,-9.566720217263191,0 -77.0355248899991,-9.56640426855645,0 -77.0355456875248,-9.56618326120746,0 -77.03559385643911,-9.565942673348619,0 -77.03564935296281,-9.56569135453975,0 -77.03577186403371,-9.56537374572893,0 -77.0359379774092,-9.565020762396159,0 -77.0360398755295,-9.56482105345818,0 -77.0361844398049,-9.564620345232131,0 -77.0364593219218,-9.56418319346216,0 -77.0368040251941,-9.56370831739375,0 -77.0371728435691,-9.56323218618847,0 -77.03738575606714,-9.563251783647068,0 -77.0374779691595,-9.563303120306909,0 -77.03749212465064,-9.563389515393297,0 -77.03749920239621,-9.563488256504131,0 -77.0374580003795,-9.56358170772388,0 -77.03737397206299,-9.56368598886875,0 -77.03724380963121,-9.563822473178419,0 -77.0370971061016,-9.563986271918649,0 -77.0369790625565,-9.56410177692487,0 -77.0368277068183,-9.56433928653264,0 -77.03661107802191,-9.564684510229361,0 -77.0364157276633,-9.564985828153389,0 -77.0361389938769,-9.56554705616789,0 -77.03601564722049,-9.56597836844184,0 -77.03595559368659,-9.566477302328559,0 -77.03593851966311,-9.567100462187639,0 -77.0356810295531,-9.56712794539928,0 -77.0355786596684,-9.567143785657681,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 7</name>
+			<Placemark id="0">
+				<name>45 KMH - 7</name>
+				<description>45 KMH - 7</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.04357899999999,-9.564633000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0420290058637,-9.565556298281511,0 -77.04186458286649,-9.56554615773377,0 -77.04150451433171,-9.565489528438951,0 -77.0412602703293,-9.56535296758689,0 -77.04094935787241,-9.56514036135715,0 -77.0407541968795,-9.5650027856673,0 -77.040528812874,-9.56489420045772,0 -77.0401411746693,-9.56459482879322,0 -77.04018972900511,-9.564432376425289,0 -77.0402667783821,-9.56450477513026,0 -77.04037018810889,-9.564595719163689,0 -77.04064817399031,-9.564745523762561,0 -77.0409554798732,-9.564936213506099,0 -77.0413801421164,-9.56518645190272,0 -77.0420540133975,-9.56526000479877,0 -77.0424394995588,-9.5652109084738,0 -77.04293165000389,-9.56518236482122,0 -77.0437556122959,-9.56483743523769,0 -77.0449862554493,-9.56407806933697,0 -77.0455464321191,-9.563746851030521,0 -77.0458026593527,-9.56358270796396,0 -77.0460091285328,-9.56342134851821,0 -77.04600984870321,-9.563418049455541,0 -77.0460324086179,-9.563211490881841,0 -77.0459867870473,-9.563056968077481,0 -77.04603356191056,-9.562910279344869,0 -77.04605948992673,-9.562770544070037,0 -77.04610752327071,-9.562608808873398,0 -77.04597463071531,-9.562496201971507,0 -77.0459973062828,-9.56242855901886,0 -77.046184689412,-9.56244775633972,0 -77.0463366187297,-9.56256622327358,0 -77.04629243419051,-9.56268930822395,0 -77.04622630974021,-9.562833087079481,0 -77.04619718060179,-9.562988413511411,0 -77.04620171337361,-9.563137894987021,0 -77.0461950710979,-9.56326544774886,0 -77.0461633515168,-9.563454325643271,0 -77.0460617219978,-9.563643065580299,0 -77.0459207760123,-9.5637598913373,0 -77.0456920860444,-9.563924784721729,0 -77.04436376906564,-9.564797681679687,0 -77.04420044822891,-9.56487692261765,0 -77.0438018660172,-9.5651410642052,0 -77.0435902256832,-9.56531498116513,0 -77.04297343182439,-9.565438612933781,0 -77.0424520533784,-9.565548781270371,0 -77.0420290058637,-9.565556298281511,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 8</name>
+			<Placemark id="0">
+				<name>45 KMH - 8</name>
+				<description>45 KMH - 8</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.039518,-9.563491000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id13</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0393115163121,-9.56417788678799,0 -77.0391414875871,-9.56409970642774,0 -77.0390165943989,-9.563982988750279,0 -77.03885204229999,-9.563777955717679,0 -77.03868456560041,-9.5636208754481,0 -77.0384365130852,-9.563494411422701,0 -77.0382160303169,-9.56346734523783,0 -77.03804140015281,-9.563323563575439,0 -77.0380191373641,-9.563263179436429,0 -77.0381710825028,-9.563194667319859,0 -77.0383755621455,-9.563190323563839,0 -77.0385538551952,-9.563273631331951,0 -77.0387631778615,-9.563390358278699,0 -77.0388968885444,-9.56348457595444,0 -77.0390084908924,-9.563610385712281,0 -77.03911680135781,-9.56378279109194,0 -77.0392086285966,-9.563829677427313,0 -77.03926862211577,-9.563771310304089,0 -77.03942268236986,-9.563578497149363,0 -77.0397141571265,-9.563240608253986,0 -77.04015122363207,-9.562906048731753,0 -77.04045559133856,-9.562762686791366,0 -77.04053803775741,-9.562778288746957,0 -77.04057456710109,-9.562792702067968,0 -77.04062048417629,-9.562804470451145,0 -77.0406784190634,-9.56281917494648,0 -77.04069060624715,-9.562821591588362,0 -77.04069877011739,-9.562825330698749,0 -77.04071576841012,-9.562829502748135,0 -77.04074037726404,-9.562833879441177,0 -77.0406102540334,-9.56298233197896,0 -77.04050450350751,-9.56312026344321,0 -77.0403279207459,-9.563255456894829,0 -77.04018010479589,-9.56344555017176,0 -77.0400614375864,-9.5635745292628,0 -77.03991975640869,-9.56378177442301,0 -77.03971259896301,-9.564009934082421,0 -77.0395123115093,-9.56412041971403,0 -77.0393115163121,-9.56417788678799,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - 9</name>
+			<Placemark id="0">
+				<name>45 KMH - 9</name>
+				<description>45 KMH - 9</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.046632,-9.546479,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id14</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.04654300771962,-9.550445553857895,0 -77.0463401926976,-9.550440631280477,0 -77.04627205458348,-9.550416256593127,0 -77.04621732751446,-9.550389236870311,0 -77.04611323779443,-9.550314037143966,0 -77.04597314644285,-9.550161360095471,0 -77.04583474040236,-9.550048897543782,0 -77.045361058235,-9.54965341584662,0 -77.0445738935709,-9.54915254595393,0 -77.04411245192421,-9.54891232116935,0 -77.04389735738771,-9.54784394568444,0 -77.04387681314302,-9.547410458863615,0 -77.04385044776657,-9.547233391122953,0 -77.04374898053771,-9.547109224479426,0 -77.0432358232617,-9.546395662208869,0 -77.04343174023073,-9.545843211825837,0 -77.04355864659099,-9.545779094065139,0 -77.04375621022189,-9.545932190017851,0 -77.04395377385273,-9.546085285901734,0 -77.04429718428388,-9.546207936665574,0 -77.04460840820683,-9.546372908427378,0 -77.0453059579051,-9.54681923443732,0 -77.04657752077669,-9.544380287396811,0 -77.0472602862903,-9.5412009088417,0 -77.0475240394864,-9.541173244905711,0 -77.04753201397617,-9.541376881719108,0 -77.04758561370008,-9.541608683505146,0 -77.04766551392872,-9.541799399689321,0 -77.04771082846106,-9.541910628339378,0 -77.04775614299341,-9.542024502051923,0 -77.04794991676752,-9.542477519560022,0 -77.04821342797599,-9.54288292481222,0 -77.0485220233129,-9.543784903293149,0 -77.0489660952271,-9.54440993347829,0 -77.04938486981651,-9.544864194748429,0 -77.0494400013927,-9.54544450551594,0 -77.04913271730121,-9.54601539197402,0 -77.04893873987869,-9.546303073956659,0 -77.0483098126695,-9.546986553208891,0 -77.0475129819859,-9.547898284631,0 -77.047449879979,-9.548568849450451,0 -77.04715728534489,-9.54997742796486,0 -77.046807231188,-9.550290842037381,0 -77.04654300771962,-9.550445553857895,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111:  Curva  62+450-62+600</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111:  Curva  62+450-62+600</name>
+				<description>45 KMH - Ruta 111:  Curva  62+450-62+600</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.079279,-9.854418000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.07864917553169,-9.854418000000001,0 -77.0786612774323,-9.854296940230229,0 -77.0786971180647,-9.85418053271952,0 -77.07875532009351,-9.85407325094323,0 -77.0788336468475,-9.85397921767985,0 -77.0789290882734,-9.85390204657496,0 -77.07903797661071,-9.85384470327085,0 -77.0791561273417,-9.85380939143853,0 -77.079279,-9.853797468091919,0 -77.07940187265829,-9.85380939143853,0 -77.07952002338931,-9.85384470327085,0 -77.0796289117266,-9.85390204657496,0 -77.0797243531525,-9.85397921767985,0 -77.07980267990651,-9.85407325094323,0 -77.0798608819353,-9.85418053271952,0 -77.0798967225677,-9.854296940230229,0 -77.0799088244683,-9.854418000000001,0 -77.0798967225677,-9.85453905976977,0 -77.0798608819353,-9.85465546728048,0 -77.07980267990651,-9.85476274905677,0 -77.0797243531525,-9.85485678232015,0 -77.0796289117266,-9.854933953425039,0 -77.07952002338931,-9.85499129672915,0 -77.07940187265829,-9.85502660856147,0 -77.079279,-9.855038531908081,0 -77.0791561273417,-9.85502660856147,0 -77.07903797661071,-9.85499129672915,0 -77.0789290882734,-9.854933953425039,0 -77.0788336468475,-9.85485678232015,0 -77.07875532009351,-9.85476274905677,0 -77.0786971180647,-9.85465546728048,0 -77.0786612774323,-9.85453905976977,0 -77.07864917553169,-9.854418000000001,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 108+300-108+420</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 108+300-108+420</name>
+				<description>45 KMH - Ruta 111: Curva 108+300-108+420</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.029135,-9.641875000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.02941058137469,-9.642797612704671,0 -77.02863199883507,-9.642222327268611,0 -77.02787195388129,-9.641483695461471,0 -77.02905965590026,-9.641024337928364,0 -77.02934945098036,-9.641200513378889,0 -77.02950684352493,-9.641455243395715,0 -77.02954070738497,-9.64149882296015,0 -77.03029682284557,-9.642037230843769,0 -77.02997003260958,-9.642431643562739,0 -77.02941058137469,-9.642797612704671,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 114+800-115+000</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 114+800-115+000</name>
+				<description>45 KMH - Ruta 111: Curva 114+800-115+000</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.016188,-9.596909999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.015193826014,-9.596909999999999,0 -77.0152129287884,-9.59671876065355,0 -77.0152695030026,-9.59653487052794,0 -77.0153613745413,-9.596365396417569,0 -77.0154850128328,-9.59621685111745,0 -77.0156356665269,-9.596094943140161,0 -77.01580754608671,-9.59600435734091,0 -77.0159940462769,-9.595948574881159,0 -77.016188,-9.59592973944955,0 -77.0163819537231,-9.595948574881159,0 -77.01656845391329,-9.59600435734091,0 -77.01674033347309,-9.596094943140161,0 -77.0168909871672,-9.59621685111745,0 -77.0170146254587,-9.596365396417569,0 -77.0171064969974,-9.59653487052794,0 -77.0171630712116,-9.59671876065355,0 -77.017182173986,-9.596909999999999,0 -77.0171630712116,-9.597101239346451,0 -77.0171064969974,-9.597285129472059,0 -77.0170146254587,-9.597454603582429,0 -77.0168909871672,-9.59760314888255,0 -77.01674033347309,-9.59772505685984,0 -77.01656845391329,-9.597815642659089,0 -77.0163819537231,-9.597871425118839,0 -77.016188,-9.59789026055045,0 -77.0159940462769,-9.597871425118839,0 -77.01580754608671,-9.597815642659089,0 -77.0156356665269,-9.59772505685984,0 -77.0154850128328,-9.59760314888255,0 -77.0153613745413,-9.597454603582429,0 -77.0152695030026,-9.597285129472059,0 -77.0152129287884,-9.597101239346451,0 -77.015193826014,-9.596909999999999,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 115+140-115+300</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 115+140-115+300</name>
+				<description>45 KMH - Ruta 111: Curva 115+140-115+300</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.01503200000001,-9.599337999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.0143114467182,-9.599337999999999,0 -77.0143252919475,-9.599199395336059,0 -77.01436629557089,-9.599066117171629,0 -77.0144328818422,-9.59894328731181,0 -77.0145224918883,-9.59883562603925,0 -77.01463168204531,-9.59874727071626,0 -77.0147562561969,-9.598681616788371,0 -77.0148914270282,-9.59864118729919,0 -77.01503200000001,-9.598627535931319,0 -77.01517257297181,-9.59864118729919,0 -77.01530774380311,-9.598681616788371,0 -77.0154323179547,-9.59874727071626,0 -77.0155415081118,-9.59883562603925,0 -77.0156311181578,-9.59894328731181,0 -77.0156977044291,-9.599066117171629,0 -77.0157387080525,-9.599199395336059,0 -77.0157525532818,-9.599337999999999,0 -77.0157387080525,-9.599476604663939,0 -77.0156977044291,-9.59960988282837,0 -77.0156311181578,-9.599732712688191,0 -77.0155415081118,-9.599840373960751,0 -77.0154323179547,-9.599928729283739,0 -77.01530774380311,-9.59999438321163,0 -77.01517257297181,-9.600034812700811,0 -77.01503200000001,-9.60004846406868,0 -77.0148914270282,-9.600034812700811,0 -77.0147562561969,-9.59999438321163,0 -77.01463168204531,-9.599928729283739,0 -77.0145224918883,-9.599840373960751,0 -77.0144328818422,-9.599732712688191,0 -77.01436629557089,-9.59960988282837,0 -77.0143252919475,-9.599476604663939,0 -77.0143114467182,-9.599337999999999,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 15+100-15+300</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 15+100-15+300</name>
+				<description>45 KMH - Ruta 111: Curva 15+100-15+300</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.178658,-10.086349,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.17847662388931,-10.0871713483322,0 -77.17745085732679,-10.08645575782702,0 -77.17746335623616,-10.08605757443573,0 -77.17762868144723,-10.08590891980683,0 -77.17867435462233,-10.0857623414097,0 -77.17998307600249,-10.0857345346786,0 -77.17967096702125,-10.08634969436065,0 -77.17901329897643,-10.0871157297373,0 -77.17847662388931,-10.0871713483322,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 20+550-20+700</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 20+550-20+700</name>
+				<description>45 KMH - Ruta 111: Curva 20+550-20+700</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.16512299999999,-10.057955,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.16571870458409,-10.0588466142684,0 -77.165125592675,-10.0586704895936,0 -77.16485257342531,-10.0585870618885,0 -77.1649278890317,-10.0583367786021,0 -77.1644100945807,-10.0581791924425,0 -77.1639487867114,-10.0579752565978,0 -77.1644854109073,-10.0571317087216,0 -77.1661894249697,-10.0577157014632,0 -77.16571870458409,-10.0588466142684,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 56+100-56+300</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 56+100-56+300</name>
+				<description>45 KMH - Ruta 111: Curva 56+100-56+300</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.081924,-9.868375,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.08137642238103,-9.86895075272257,0 -77.08122511709047,-9.868211184384181,0 -77.08154698030489,-9.868064128656401,0 -77.0816775127538,-9.868005236730751,0 -77.08222323226789,-9.867773493343099,0 -77.0827689528511,-9.86849653394002,0 -77.08214796042438,-9.868728278374849,0 -77.08137642238103,-9.86895075272257,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 57+300-57+450</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 57+300-57+450</name>
+				<description>45 KMH - Ruta 111: Curva 57+300-57+450</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.083943,-9.861326,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0836582140098,-9.862162183351787,0 -77.08346062978785,-9.861541109879166,0 -77.08338238274723,-9.861475169604137,0 -77.08313873822635,-9.861065790533377,0 -77.0840816084318,-9.860475083907529,0 -77.08477785932843,-9.861615265516658,0 -77.0836582140098,-9.862162183351787,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 63+700-63+850</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 63+700-63+850</name>
+				<description>45 KMH - Ruta 111: Curva 63+700-63+850</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.075537,-9.854196,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.07498520119481,-9.85494318699916,0 -77.0750238686548,-9.854163428679129,0 -77.07512899136729,-9.853393509365731,0 -77.07603854673761,-9.853443229383521,0 -77.0760466673032,-9.85492983955894,0 -77.07498520119481,-9.85494318699916,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 64+070-64+260</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 64+070-64+260</name>
+				<description>45 KMH - Ruta 111: Curva 64+070-64+260</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.07753,-9.852171,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0778538719847,-9.852932846941339,0 -77.07637673332231,-9.8520707543968,0 -77.0772140936017,-9.851375523923121,0 -77.07870063850559,-9.85233958127864,0 -77.0778538719847,-9.852932846941339,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva 64+400-64+550</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva 64+400-64+550</name>
+				<description>45 KMH - Ruta 111: Curva 64+400-64+550</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.07505999999999,-9.852726000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.07473038926931,-9.8533717203969,0 -77.0743873091793,-9.852215375788839,0 -77.0752749211013,-9.85206303648534,0 -77.0754403093887,-9.85261663647927,0 -77.0756537144326,-9.852582737809509,0 -77.0757846779091,-9.853152181636259,0 -77.07473038926931,-9.8533717203969,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111: Curva sinuosa 22+340-22+700</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111: Curva sinuosa 22+340-22+700</name>
+				<description>45 KMH - Ruta 111: Curva sinuosa 22+340-22+700</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.156272,-10.068732,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.15709749773561,-10.0696326668112,0 -77.1563042929497,-10.0694410282973,0 -77.156533596638,-10.0690114240133,0 -77.1550921940478,-10.0687072942776,0 -77.155556686621,-10.0677589237334,0 -77.1562661129869,-10.0680013976421,0 -77.1560342434675,-10.0684286267763,0 -77.1575280983343,-10.0689374191435,0 -77.15709749773561,-10.0696326668112,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 111; Curva 65+750-66+00</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 111; Curva 65+750-66+00</name>
+				<description>45 KMH - Ruta 111; Curva 65+750-66+00</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.073278,-9.848768,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.07286264148151,-9.849629934097949,0 -77.072440772503,-9.848050444521,0 -77.0731063930736,-9.84789342385349,0 -77.0732095169937,-9.84824442240345,0 -77.0739313843475,-9.84811510942499,0 -77.0740720076937,-9.84937130751876,0 -77.07286264148151,-9.849629934097949,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - RUTA 16: Cajacay 89+600-90+400</name>
+			<Placemark id="0">
+				<name>45 KMH - RUTA 16: Cajacay 89+600-90+400</name>
+				<description>45 KMH - RUTA 16: Cajacay 89+600-90+400</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.437961,-10.154068,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.4380620043473,-10.1562933825711,0 -77.4360796526618,-10.1554137485961,0 -77.4376969624432,-10.1526757028611,0 -77.4381867073797,-10.1514750678618,0 -77.4389823583541,-10.1515711254959,0 -77.4387661444937,-10.1529341557753,0 -77.4396732518819,-10.1530708635118,0 -77.4380620043473,-10.1562933825711,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 16: Chucchus 72+600-72+700</name>
+			<Folder>
+				<name>45 KMH - RUTA 16: Cajacay 89+600-90+400</name>
+				<Placemark id="0">
+					<name>45 KMH - RUTA 16: Cajacay 89+600-90+400</name>
+					<description>45 KMH - RUTA 16: Cajacay 89+600-90+400</description>
+					<Style id="myIcon0">
+					</Style>
+					<Point>
+						<coordinates>-77.437961,-10.154068,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark id="circle">
+					<name>area</name>
+					<Style>
+						<IconStyle>
+							<color>ff0000ff</color>
+							<scale>1</scale>
+							<Icon>
+								<href>http://live.3dtracking.net/i/b.gif</href>
+							</Icon>
+							<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+						</IconStyle>
+						<LineStyle>
+							<color>ff0000ff</color>
+							<width>1</width>
+						</LineStyle>
+						<PolyStyle>
+							<color>ff0000ff</color>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-77.4380620043473,-10.1562933825711,0 -77.4360796526618,-10.1554137485961,0 -77.4376969624432,-10.1526757028611,0 -77.4381867073797,-10.1514750678618,0 -77.4389823583541,-10.1515711254959,0 -77.4387661444937,-10.1529341557753,0 -77.4396732518819,-10.1530708635118,0 -77.4380620043473,-10.1562933825711,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 16: Chucchus 72+600-72+700</name>
+				<description>45 KMH - Ruta 16: Chucchus 72+600-72+700</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.514939,-10.14613,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.51470146167971,-10.14613,0 -77.51470602591191,-10.1460843832752,0 -77.5147195432077,-10.1460405195755,0 -77.5147414941049,-10.1460000945583,0 -77.5147710350429,-10.1459646617344,0 -77.51480703078001,-10.1459355827674,0 -77.51484809802029,-10.1459139751455,0 -77.51489265857261,-10.1459006692377,0 -77.514939,-10.1458961763825,0 -77.5149853414274,-10.1459006692377,0 -77.5150299019797,-10.1459139751455,0 -77.51507096921991,-10.1459355827674,0 -77.5151069649571,-10.1459646617344,0 -77.5151365058951,-10.1460000945583,0 -77.51515845679231,-10.1460405195755,0 -77.5151719740881,-10.1460843832752,0 -77.5151765383203,-10.14613,0 -77.5151719740881,-10.1461756167248,0 -77.51515845679231,-10.1462194804245,0 -77.5151365058951,-10.1462599054417,0 -77.5151069649571,-10.1462953382656,0 -77.51507096921991,-10.1463244172326,0 -77.5150299019797,-10.1463460248545,0 -77.5149853414274,-10.1463593307623,0 -77.514939,-10.1463638236175,0 -77.51489265857261,-10.1463593307623,0 -77.51484809802029,-10.1463460248545,0 -77.51480703078001,-10.1463244172326,0 -77.5147710350429,-10.1462953382656,0 -77.5147414941049,-10.1462599054417,0 -77.5147195432077,-10.1462194804245,0 -77.51470602591191,-10.1461756167248,0 -77.51470146167971,-10.14613,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 16: Colca 82-82+120</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 16: Colca 82-82+120</name>
+				<description>45 KMH - Ruta 16: Colca 82-82+120</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.463848,-10.159175,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.46239938637881,-10.1600705366294,0 -77.46224925071979,-10.1587404326638,0 -77.4652614968436,-10.1582047237466,0 -77.465364719142,-10.1597103147781,0 -77.46239938637881,-10.1600705366294,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 16: Curva 111+700-111+950</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 16: Curva 111+700-111+950</name>
+				<description>45 KMH - Ruta 16: Curva 111+700-111+950</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.33454500000001,-10.162591,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.33387803116609,-10.162591,0 -77.3338908467852,-10.1624629222726,0 -77.3339288011455,-10.1623397665004,0 -77.3339904356822,-10.1622262654907,0 -77.3340733818147,-10.1621267810236,0 -77.3341744519695,-10.1620451362315,0 -77.3342897620773,-10.1619844686779,0 -77.3344148808354,-10.1619471097828,0 -77.33454500000001,-10.1619344952277,0 -77.3346751191646,-10.1619471097828,0 -77.33480023792271,-10.1619844686779,0 -77.33491554803049,-10.1620451362315,0 -77.33501661818531,-10.1621267810236,0 -77.3350995643178,-10.1622262654907,0 -77.33516119885449,-10.1623397665004,0 -77.3351991532148,-10.1624629222726,0 -77.3352119688339,-10.162591,0 -77.3351991532148,-10.1627190777274,0 -77.33516119885449,-10.1628422334996,0 -77.3350995643178,-10.1629557345093,0 -77.33501661818531,-10.1630552189764,0 -77.33491554803049,-10.1631368637685,0 -77.33480023792271,-10.1631975313221,0 -77.3346751191646,-10.1632348902172,0 -77.33454500000001,-10.1632475047723,0 -77.3344148808354,-10.1632348902172,0 -77.3342897620773,-10.1631975313221,0 -77.3341744519695,-10.1631368637685,0 -77.3340733818147,-10.1630552189764,0 -77.3339904356822,-10.1629557345093,0 -77.3339288011455,-10.1628422334996,0 -77.3338908467852,-10.1627190777274,0 -77.33387803116609,-10.162591,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 16: Curva Santa Rosa 107+700-107+800</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 16: Curva Santa Rosa 107+700-107+800</name>
+				<description>45 KMH - Ruta 16: Curva Santa Rosa 107+700-107+800</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.33398099999999,-10.175955,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						-77.3331404013695,-10.175955,0 -77.33315655323641,-10.1757935869736,0 -77.3332043881302,-10.1756383769594,0 -77.3332820677826,-10.175495334591,0 -77.33338660700809,-10.1753699569065,0 -77.33351398842299,-10.1752670621,0 -77.3336593168308,-10.1751906043611,0 -77.3338170073425,-10.175143521918,0 -77.33398099999999,-10.1751276241226,0 -77.3341449926575,-10.175143521918,0 -77.3343026831692,-10.1751906043611,0 -77.334448011577,-10.1752670621,0 -77.33457539299189,-10.1753699569065,0 -77.3346799322174,-10.175495334591,0 -77.3347576118698,-10.1756383769594,0 -77.3348054467635,-10.1757935869736,0 -77.3348215986305,-10.175955,0 -77.3348054467635,-10.1761164130264,0 -77.3347576118698,-10.1762716230406,0 -77.3346799322174,-10.176414665409,0 -77.33457539299189,-10.1765400430935,0 -77.334448011577,-10.1766429379,0 -77.3343026831692,-10.1767193956389,0 -77.3341449926575,-10.176766478082,0 -77.33398099999999,-10.1767823758774,0 -77.3338170073425,-10.176766478082,0 -77.3336593168308,-10.1767193956389,0 -77.33351398842299,-10.1766429379,0 -77.33338660700809,-10.1765400430935,0 -77.3332820677826,-10.176414665409,0 -77.3332043881302,-10.1762716230406,0 -77.33315655323641,-10.1761164130264,0 -77.3331404013695,-10.175955,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta 16: Sequespampa 104+900-108+000</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta 16: Sequespampa 104+900-108+000</name>
+				<description>45 KMH - Ruta 16: Sequespampa 104+900-108+000</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.338803,-10.172767,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.3327449451404,-10.1791082221644,0 -77.3298480179069,-10.1769517631038,0 -77.3341597392552,-10.1733397125294,0 -77.33742329212571,-10.1734615859549,0 -77.3391022132211,-10.1728211903772,0 -77.34134063274119,-10.1697970348965,0 -77.3439812826753,-10.1680106643296,0 -77.34535431011859,-10.1659483992038,0 -77.3465073625474,-10.1631452611514,0 -77.34716195302219,-10.1626894879253,0 -77.34771385940439,-10.1633052529442,0 -77.34719142962609,-10.1654134651066,0 -77.3453827445164,-10.1696703252323,0 -77.3404734475176,-10.1741138341145,0 -77.3353526300308,-10.1776049908212,0 -77.3327449451404,-10.1791082221644,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta Conococha-Huaraz: 537+600-538+000</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta Conococha-Huaraz: 537+600-538+000</name>
+				<description>45 KMH - Ruta Conococha-Huaraz: 537+600-538+000</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.41163400000001,-9.837948000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.4119701153049,-9.84072561490327,0 -77.40913736573449,-9.84013810511121,0 -77.41167409097601,-9.834945685593921,0 -77.4139333582402,-9.835693873055691,0 -77.4119701153049,-9.84072561490327,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta Conococha-Huaraz:Curva 542+000-542+950</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta Conococha-Huaraz:Curva 542+000-542+950</name>
+				<description>45 KMH - Ruta Conococha-Huaraz:Curva 542+000-542+950</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.42747300000001,-9.80972,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.4269938082729,-9.81279818109175,0 -77.4245473384296,-9.812278426325321,0 -77.4267958475001,-9.808033797228051,0 -77.4279954356842,-9.80785735220846,0 -77.4287885061519,-9.807540685162129,0 -77.4299067915514,-9.806440418279269,0 -77.4313952978311,-9.807240165507521,0 -77.42833567720589,-9.8091791849114,0 -77.4276801024989,-9.81129423100306,0 -77.4269938082729,-9.81279818109175,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta Conococha-Huaraz:Pte Ayacayana554+800-555+000</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta Conococha-Huaraz:Pte Ayacayana554+800-555+000</name>
+				<description>45 KMH - Ruta Conococha-Huaraz:Pte Ayacayana554+800-555+000</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.460668,-9.709258999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.4610699252723,-9.710665933348929,0 -77.4605296793595,-9.710477365958029,0 -77.4605520381175,-9.70993413122673,0 -77.4603142735459,-9.709434449732241,0 -77.4602623795998,-9.708796068398611,0 -77.4603049592754,-9.707917360678319,0 -77.4608333469166,-9.707917361862149,0 -77.4608447174209,-9.709133158585921,0 -77.46112475204291,-9.709763451234799,0 -77.4610699252723,-9.710665933348929,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta111:Curva baja Yanashalla 58+500-58+850</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta111:Curva baja Yanashalla 58+500-58+850</name>
+				<description>45 KMH - Ruta111:Curva baja Yanashalla 58+500-58+850</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.078245,-9.868143,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.07725538985611,-9.869147056154571,0 -77.0770860433452,-9.86760826322487,0 -77.07823394285499,-9.86756191791897,0 -77.07824335308401,-9.86718185774251,0 -77.07921247383609,-9.867089161513601,0 -77.0794100624031,-9.868284960943541,0 -77.0785444335831,-9.868998736816859,0 -77.07725538985611,-9.869147056154571,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>45 KMH - Ruta111:Pachapaqui pueblo(pte) 38+300-39+550</name>
+			<Placemark id="0">
+				<name>45 KMH - Ruta111:Pachapaqui pueblo(pte) 38+300-39+550</name>
+				<description>45 KMH - Ruta111:Pachapaqui pueblo(pte) 38+300-39+550</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.099344,-9.958657000000001,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<Style>
+					<IconStyle>
+						<color>ff0000ff</color>
+						<scale>1</scale>
+						<Icon>
+							<href>http://live.3dtracking.net/i/b.gif</href>
+						</Icon>
+						<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+					</IconStyle>
+					<LineStyle>
+						<color>ff0000ff</color>
+						<width>1</width>
+					</LineStyle>
+					<PolyStyle>
+						<color>ff0000ff</color>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0999378333676,-9.96425255576934,0 -77.0978213669905,-9.96338897993869,0 -77.09854695958209,-9.96035168823872,0 -77.0991214149806,-9.95838636841871,0 -77.097942309952,-9.956033956837359,0 -77.0968396149825,-9.95401754548919,0 -77.099280033844,-9.95339433356253,0 -77.1012836942636,-9.95839453898043,0 -77.0999378333676,-9.96425255576934,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>55 KMH - 1</name>
+			<Placemark id="0">
+				<name>55 KMH - 1</name>
+				<description>55 KMH - 1</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.047652,-9.558325,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.03956085677859,-9.620790706875358,0 -77.03542994703285,-9.618450643586529,0 -77.03136362345072,-9.616144563778297,0 -77.02646054537149,-9.613494118470737,0 -77.02082067707249,-9.610569211352335,0 -77.01696506103863,-9.6085791899438,0 -77.01700755407572,-9.605323163041511,0 -77.01705235641144,-9.601580846984513,0 -77.01710724047089,-9.598461119538067,0 -77.01711796930695,-9.597561934124291,0 -77.01698922327424,-9.597117629862534,0 -77.01667759271282,-9.596470867583028,0 -77.01578709931988,-9.596724756288511,0 -77.01560470910687,-9.595677464152409,0 -77.01556179376263,-9.594619590022317,0 -77.01633378251198,-9.593779793298053,0 -77.0183442644162,-9.590911892502501,0 -77.02000961419076,-9.588408228363665,0 -77.02126830824498,-9.586796468569142,0 -77.02297452881089,-9.584550170106056,0 -77.02380064918748,-9.583481682159823,0 -77.02448729469529,-9.583375891091007,0 -77.02487353279344,-9.583222493982655,0 -77.02523831321946,-9.583047938568114,0 -77.02596787407151,-9.582307399447391,0 -77.02838186218492,-9.580614732532606,0 -77.0288646598076,-9.579992406405891,0 -77.02978733970872,-9.578532471736168,0 -77.03018430664292,-9.577675550636666,0 -77.03078780367127,-9.575756461590926,0 -77.03101567024305,-9.574994056739955,0 -77.03145287031248,-9.573801230710027,0 -77.03195712560728,-9.572944297672949,0 -77.03285834783628,-9.573251101107488,0 -77.03331416845003,-9.573507895032936,0 -77.0336320102183,-9.573499960470832,0 -77.03385865688006,-9.573375652307162,0 -77.03410542010943,-9.572836101452527,0 -77.03390157222429,-9.571376136020236,0 -77.03399350755167,-9.570545492495503,0 -77.03447630517435,-9.569762607983513,0 -77.03513617638276,-9.569395819237711,0 -77.03525687578843,-9.56948574535013,0 -77.03543658379243,-9.56955451236121,0 -77.03649605635331,-9.569390529465648,0 -77.03746969822572,-9.568951478097713,0 -77.03881223854209,-9.566636887173907,0 -77.04096071546927,-9.565405928731382,0 -77.04126648729697,-9.565337160881043,0 -77.04146362965956,-9.565440312651337,0 -77.0417948824729,-9.565543464390347,0 -77.04235814636603,-9.56548263131728,0 -77.04316968258179,-9.565351459842972,0 -77.04352448871838,-9.565272649496629,0 -77.04376760590756,-9.565171088728613,0 -77.04394903228936,-9.565077462689159,0 -77.04428151928438,-9.565637406900285,0 -77.04442096742245,-9.565787972465468,0 -77.04460333090472,-9.565906799007571,0 -77.04494660019722,-9.566043945322571,0 -77.04534893154947,-9.566009561463671,0 -77.04576199173776,-9.565811192978988,0 -77.04614822983591,-9.565715976065229,0 -77.0464915525898,-9.565483223497111,0 -77.04763953804817,-9.564213661229896,0 -77.04834018786279,-9.562835066803434,0 -77.04899464686243,-9.561930497129451,0 -77.04953811309758,-9.561453777902402,0 -77.0500198885254,-9.56087919478767,0 -77.05034980023423,-9.560067193474948,0 -77.05015668118516,-9.559982554790103,0 -77.04931865006941,-9.56053818786976,0 -77.0482874999046,-9.560913963354214,0 -77.04788248634335,-9.560982732098976,0 -77.04769070839879,-9.560988022001835,0 -77.04752038812634,-9.560961572486686,0 -77.04741247999547,-9.560769071315431,0 -77.04735285162687,-9.560576570035209,0 -77.0463497054553,-9.558883794871848,0 -77.04626296082407,-9.558667340757758,0 -77.04614939410267,-9.558503785924577,0 -77.04599559424607,-9.558282041623833,0 -77.0459428341989,-9.558184394285576,0 -77.04588470973367,-9.558070877075121,0 -77.0456289263152,-9.55727911717892,0 -77.04346079446279,-9.554650480649871,0 -77.04389824175782,-9.552536699969432,0 -77.04434669038044,-9.551064017235374,0 -77.04484057765258,-9.549294820799117,0 -77.04530728202117,-9.549485263789979,0 -77.04603237251631,-9.55024049170612,0 -77.04616916517607,-9.55036216329138,0 -77.04630595783583,-9.5504573845017,0 -77.04682094196669,-9.550430934168171,0 -77.04726618866316,-9.549788190431913,0 -77.04722595552794,-9.549636187081513,0 -77.04734129051558,-9.549510634070344,0 -77.04752368072859,-9.548920962294016,0 -77.04774967702001,-9.547749806819088,0 -77.04872014840788,-9.546598487255748,0 -77.04907090192897,-9.5461102513512,0 -77.04945920637627,-9.545727817562462,0 -77.04977190867099,-9.545908232625687,0 -77.05036411878328,-9.545818575458453,0 -77.05048962452697,-9.54553847317675,0 -77.05177826279277,-9.544013746983413,0 -77.05135983818644,-9.543056225490222,0 -77.05052435616481,-9.541865137572769,0 -77.04889833315424,-9.539948727819192,0 -77.04804349491417,-9.53891054178321,0 -77.04805841475938,-9.538817810939166,0 -77.0480411480964,-9.538695983701148,0 -77.04792614850004,-9.538685100141427,0 -77.04773370023348,-9.538766492872618,0 -77.04763311785594,-9.539138242908852,0 -77.04672384992091,-9.539934644068159,0 -77.04704432074986,-9.541983273318049,0 -77.04655586858594,-9.544258623116077,0 -77.0465115396064,-9.5447031395518,0 -77.04635794687489,-9.545028555508621,0 -77.04622616522434,-9.545200521129884,0 -77.04620971856143,-9.545369841591562,0 -77.04517155861103,-9.546533957721449,0 -77.04472631191456,-9.54643080022085,0 -77.04428106521809,-9.546272096312777,0 -77.04388141607487,-9.546063136054405,0 -77.04349786018574,-9.545814499630616,0 -77.04317063068592,-9.546195389397381,0 -77.04379826759541,-9.547211093360227,0 -77.04409331058704,-9.548607681364306,0 -77.04365074609959,-9.548935667110726,0 -77.0433101055547,-9.548876153591479,0 -77.04300701593601,-9.548843090520744,0 -77.03633456908815,-9.558100337466517,0 -77.03616611226954,-9.559215484413507,0 -77.03562214618884,-9.560267148742891,0 -77.03546173599727,-9.561093989095383,0 -77.03523347824854,-9.560943759342919,0 -77.03466457995493,-9.561087119172129,0 -77.0348249725309,-9.561998045902035,0 -77.03463131351688,-9.562305924141342,0 -77.03392267037205,-9.563132209705834,0 -77.03400425770593,-9.563839274478822,0 -77.0346222868428,-9.564165468549783,0 -77.03463547784681,-9.565482184965004,0 -77.03464207334883,-9.566129961614909,0 -77.03479887255565,-9.566756577778863,0 -77.03523540207283,-9.567145378818756,0 -77.03559146531956,-9.567513020209336,0 -77.03574066319601,-9.567739820365297,0 -77.03571283527748,-9.568008938721391,0 -77.03541578062908,-9.56854717479435,0 -77.03530178674595,-9.568877786210194,0 -77.03517773457901,-9.569058961129688,0 -77.03508637183444,-9.569134671058313,0 -77.03501646676199,-9.569146903665276,0 -77.03483910569088,-9.569256005275546,0 -77.03422219761745,-9.56975059880282,0 -77.03359456070797,-9.570255771127728,0 -77.03342289933101,-9.571440674995593,0 -77.03106255539791,-9.570594315511581,0 -77.03053930016877,-9.570756622362303,0 -77.0300696891199,-9.571056462563657,0 -77.02976637502995,-9.571536153663876,0 -77.0298158836611,-9.571834186039704,0 -77.02981484977381,-9.571956301685562,0 -77.02977090054227,-9.571993781592873,0 -77.02959717139078,-9.572111059235761,0 -77.02947038089701,-9.572451166553918,0 -77.02970300641124,-9.57280714268866,0 -77.02955664435241,-9.57297482120317,0 -77.02950760320412,-9.573061305286858,0 -77.0294897881525,-9.573113804320343,0 -77.02948538414599,-9.573166303345673,0 -77.02951452511012,-9.573795238609991,0 -77.02924325866456,-9.573977193295365,0 -77.02900686093624,-9.574190886068941,0 -77.02844555258206,-9.574483384072861,0 -77.02814173629329,-9.575320719278276,0 -77.0280771816094,-9.575364750325919,0 -77.02801262692553,-9.575488126534575,0 -77.02791302185696,-9.575962334694033,0 -77.0277973235343,-9.576304300605832,0 -77.02768430742063,-9.576617173046815,0 -77.0273596478942,-9.577358209276541,0 -77.02651732202791,-9.578107178343735,0 -77.02519745072134,-9.579732062210796,0 -77.02414835053378,-9.581051817602734,0 -77.02388511421636,-9.581253813779336,0 -77.02349313186622,-9.581402913989688,0 -77.02306321875591,-9.581754010013483,0 -77.02243942692859,-9.582403305281394,0 -77.02244359560126,-9.582603151767357,0 -77.02256578147058,-9.582781839882198,0 -77.02278452686444,-9.582912921852976,0 -77.0232929508319,-9.583054582891839,0 -77.02344373597332,-9.583314432391639,0 -77.02350927186284,-9.583463862293799,0 -77.02143020341357,-9.584693681113047,0 -77.0147855874922,-9.591404791896407,0 -77.01206772556864,-9.597396420975059,0 -77.005644948804,-9.604386368320295,0 -76.98953782911263,-9.594839505114207,0 -77.01002990598641,-9.555529278427153,0 -77.02760373945199,-9.536699090205422,0 -77.03859006757699,-9.528742416188511,0 -77.03807508344613,-9.520785556693127,0 -77.04219495649301,-9.520446962815338,0 -77.06845914716683,-9.503516841303064,0 -77.08219205732308,-9.505548500133315,0 -77.09335004682504,-9.513167113293887,0 -77.09712659711801,-9.527895950587812,0 -77.09540998334847,-9.545840571612473,0 -77.08888685102426,-9.563276420702202,0 -77.07499112998215,-9.568440905547268,0 -77.05881173949824,-9.578493481003857,0 -77.04991650326241,-9.588883782793195,0 -77.05004524929512,-9.590365141346362,0 -77.05045294506539,-9.594797667518762,0 -77.04978775722969,-9.59633489826917,0 -77.04754247032183,-9.601752746435951,0 -77.04558308874618,-9.606414934807125,0 -77.04438524946075,-9.609164038463163,0 -77.04279097574754,-9.613019252800006,0 -77.04109017319435,-9.617083475272835,0 -77.03956085677859,-9.620790706875358,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>60 KMH - Ingreso a PPL</name>
+			<Placemark id="0">
+				<name>60 KMH - Ingreso a PPL</name>
+				<description>60 KMH - Ingreso a PPL</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.143513,-10.114167,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id18</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.15089737012487,-10.11637250978182,0 -78.13339134879581,-10.1150188133002,0 -78.13480411603553,-10.11247509516526,0 -78.14167057111365,-10.1118836134754,0 -78.14720734333707,-10.11308955958084,0 -78.15042599415494,-10.11532872611479,0 -78.15285105751275,-10.11525572137753,0 -78.1544818405938,-10.11495998322885,0 -78.15551180885552,-10.11468536898979,0 -78.15841421259495,-10.11359024753918,0 -78.16185280455204,-10.11210098423019,0 -78.16193058861347,-10.11226799858862,0 -78.16171593689307,-10.11235493309397,0 -78.16150195572493,-10.11244582838742,0 -78.16108002835892,-10.1126243182227,0 -78.16023215031339,-10.11298921920564,0 -78.1594375236283,-10.11408053997658,0 -78.15460418298345,-10.11540080107829,0 -78.15446336701017,-10.11547869631374,0 -78.15441173448663,-10.11553612753456,0 -78.15437653049331,-10.11555560133698,0 -78.15429572894674,-10.11555923204577,0 -78.15424275531869,-10.11556319281896,0 -78.15418709948163,-10.11556187256124,0 -78.15404628350835,-10.11551698379542,0 -78.15089737012487,-10.11637250978182,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>60 KMH - 2</name>
+			<Placemark id="0">
+				<name>60 KMH - 2</name>
+				<description>60 KMH - 2</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-78.171053,-10.110939,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id37</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.1688411290399,-10.1143788169611,0 -78.16859084959211,-10.1143448557793,0 -78.1682155476885,-10.1141497249487,0 -78.1678551798049,-10.113855718216,0 -78.1664966651892,-10.1124670455526,0 -78.16599011808709,-10.1122026648046,0 -78.16485590472649,-10.1117532041209,0 -78.16429020866561,-10.1116444045621,0 -78.16367032952149,-10.1116776222869,0 -78.1631509784624,-10.1118232284963,0 -78.16196333396429,-10.1123340085043,0 -78.1618719668748,-10.1121112061226,0 -78.16340980561699,-10.1115538092044,0 -78.1642226285109,-10.1114794394164,0 -78.1649308556829,-10.1116015721001,0 -78.1661560914677,-10.1120792287502,0 -78.1666697407023,-10.1123558210293,0 -78.168025253186,-10.113714802203,0 -78.16841559604551,-10.1140885074193,0 -78.1688456289579,-10.1142049715201,0 -78.16927363337879,-10.1141565879156,0 -78.1697625038975,-10.1138547775983,0 -78.1705297823278,-10.1133671729358,0 -78.1714251400138,-10.1128666285358,0 -78.1718412683886,-10.1126299483909,0 -78.17203623241861,-10.1124775915189,0 -78.1722320070771,-10.112228863508,0 -78.17253259427309,-10.1111220214994,0 -78.1726239457832,-10.1106927164902,0 -78.1728441586535,-10.1102266838186,0 -78.1731994253351,-10.1098560630843,0 -78.17420817766779,-10.1090184068599,0 -78.1748680809351,-10.1084842902675,0 -78.17514846634199,-10.10834243211,0 -78.17574816953829,-10.1081781930072,0 -78.1760915402065,-10.1080834987798,0 -78.17783578989091,-10.1076036164887,0 -78.178226613302,-10.1074474752457,0 -78.1784478127673,-10.1071655700362,0 -78.1784693219312,-10.1067541632778,0 -78.1782904539846,-10.1064381267071,0 -78.1777770235511,-10.1060102238582,0 -78.1779709544201,-10.1057940060431,0 -78.1784145696919,-10.1063246377641,0 -78.1786395276477,-10.1067044139195,0 -78.1785908446687,-10.1072241130989,0 -78.17830838198959,-10.1075680889256,0 -78.1778844939725,-10.1077521617564,0 -78.17613238289491,-10.1083079006649,0 -78.1757700522149,-10.1084125239895,0 -78.17516719956269,-10.1085899087212,0 -78.1748436149249,-10.1087091482254,0 -78.1742784425705,-10.1091779515706,0 -78.1733127090901,-10.1100202506554,0 -78.17306405849369,-10.1103267820227,0 -78.1728377372071,-10.1107371666108,0 -78.1726323440523,-10.1114907710038,0 -78.1724023581163,-10.112351404973,0 -78.1721779084036,-10.1126321356438,0 -78.1718962816126,-10.1128100526292,0 -78.1714630300811,-10.1130405138829,0 -78.1705666127182,-10.1135562281066,0 -78.1698114571282,-10.1140381294227,0 -78.1692793725491,-10.1143391623487,0 -78.1688411290399,-10.1143788169611,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>60 KMH - Ruta 111: Taruscancha 84+200-84+900</name>
+			<Placemark id="0">
+				<name>60 KMH - Ruta 111: Taruscancha 84+200-84+900</name>
+				<description>60 KMH - Ruta 111: Taruscancha 84+200-84+900</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.061555,-9.759679999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id39</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.0622238484204,-9.76295783989575,0 -77.060284991752,-9.762491843638481,0 -77.06015800996251,-9.759765971938499,0 -77.05959842271589,-9.75619450218808,0 -77.06233550100811,-9.756328766596679,0 -77.06240624759251,-9.757607973478811,0 -77.0628327355894,-9.75864210215693,0 -77.063076350774,-9.760020902514571,0 -77.0638161869131,-9.762541361811371,0 -77.0636163570253,-9.762668501752509,0 -77.0622238484204,-9.76295783989575,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>60 KMH - Ruta Conococha-Huaraz: Ticapampa 547+900-548+700</name>
+			<Placemark id="0">
+				<name>60 KMH - Ruta Conococha-Huaraz: Ticapampa 547+900-548+700</name>
+				<description>60 KMH - Ruta Conococha-Huaraz: Ticapampa 547+900-548+700</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.44214599999999,-9.762585,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id40</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.4419883651323,-9.766915340027319,0 -77.439895644654,-9.76641072646974,0 -77.4412147483789,-9.76199140667657,0 -77.4418828940437,-9.758403382775951,0 -77.4443101468716,-9.758871438001661,0 -77.443413181959,-9.76268077366378,0 -77.4419883651323,-9.766915340027319,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>70 KMH - 2 Ruta: Tunan-Huaraz-Antamina</name>
+			<Placemark id="0">
+				<name>70 KMH - 2  Ruta: Tunan-Huaraz-Antamina</name>
+				<description>70 KMH - 2  Ruta: Tunan-Huaraz-Antamina</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.729198,-10.649135,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id41</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-77.70455783994583,-10.70084732910122,0 -77.64584964902787,-10.68769030060634,0 -77.62942929102819,-10.66290914928547,0 -77.62874264552038,-10.66193913847865,0 -77.6343484623615,-10.65993537489843,0 -77.63438333107869,-10.65969550603972,0 -77.63502437903325,-10.65945300106736,0 -77.63566815852741,-10.65925007124278,0 -77.63767445087055,-10.65859636078877,0 -77.64911506867159,-10.65458422813691,0 -77.67512176727999,-10.6433653468233,0 -77.69821809214469,-10.63126911168802,0 -77.70054363470311,-10.63018267195517,0 -77.72178673010106,-10.61875199119801,0 -77.74306609991667,-10.60581799306006,0 -77.75774314764617,-10.59687523452558,0 -77.76546862400396,-10.59086816358187,0 -77.77426157651171,-10.58510420560432,0 -77.78644953427538,-10.59792819548292,0 -77.81185541806444,-10.62391200140799,0 -77.8233567303203,-10.64500112815336,0 -77.82121709461772,-10.65273820955429,0 -77.80723017605793,-10.65436580873699,0 -77.80720000120651,-10.65436482024872,0 -77.80700084718715,-10.65435592385418,0 -77.80565306254935,-10.65318989706521,0 -77.76312441574561,-10.65319426124737,0 -77.76017269354669,-10.65790558355195,0 -77.76010027390329,-10.65801761089893,0 -77.76005869966356,-10.65806242182617,0 -77.7383751312056,-10.68954581353745,0 -77.70455783994583,-10.70084732910122,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>70 KMH - Ruta: Tunan-Huaraz-Antamina</name>
+			<Placemark id="0">
+				<name>70 KMH - Ruta: Tunan-Huaraz-Antamina</name>
+				<description>70 KMH - Ruta: Tunan-Huaraz-Antamina</description>
+				<Style id="myIcon0">
+				</Style>
+				<Point>
+					<coordinates>-77.404175,-10.079741,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="circle">
+				<name>area</name>
+				<styleUrl>#stylemap_id42</styleUrl>
+				<LineString>
+					<coordinates>
+						-76.7710469705188,-10.079741,0 -76.7832123480741,-9.9581303205537,0 -76.8192409721031,-9.84119307131847,0 -76.8777482827894,-9.733423085203251,0 -76.95648587699451,-9.63896190233635,0 -77.0524279131299,-9.561439613000889,0 -77.16188739255161,-9.50383535530105,0 -77.28065784885111,-9.46836282855538,0 -77.404175,-9.456385222073489,0 -77.5276921511489,-9.46836282855538,0 -77.6464626074484,-9.50383535530105,0 -77.7559220868701,-9.561439613000889,0 -77.8518641230055,-9.63896190233635,0 -77.93060171721061,-9.733423085203251,0 -77.9891090278969,-9.84119307131847,0 -78.0251376519259,-9.9581303205537,0 -78.03730302948119,-10.079741,0 -78.0251376519259,-10.2013516794463,0 -77.9891090278969,-10.3182889286815,0 -77.89243916441839,-10.43817342071516,0 -77.8518641230055,-10.5205200976637,0 -77.7559220868701,-10.5980423869991,0 -77.6464626074484,-10.655646644699,0 -77.5276921511489,-10.6911191714446,0 -77.404175,-10.7030967779265,0 -77.28065784885111,-10.6911191714446,0 -77.16188739255161,-10.655646644699,0 -77.0524279131299,-10.5980423869991,0 -76.95648587699451,-10.5205200976637,0 -76.8777482827894,-10.4260589147967,0 -76.8192409721031,-10.3182889286815,0 -76.7832123480741,-10.2013516794463,0 -76.7710469705188,-10.079741,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
