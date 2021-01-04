@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Transagui_gz_perdida_senal_cp_reseteo.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Mis lugares</name>
+		<open>1</open>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<ItemIcon>
+					<state>open</state>
+					<href>:/mysavedplaces_open.png</href>
+				</ItemIcon>
+				<ItemIcon>
+					<state>closed</state>
+					<href>:/mysavedplaces_closed.png</href>
+				</ItemIcon>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Placemark>
+			<name>RUTA TRANSAGUI HUARON</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.68964624353636,-11.94328023926214,0 -76.63964805370037,-11.93117554106963,0 -76.59270483292414,-11.91615492076322,0 -76.56012972041574,-11.91992781504362,0 -76.52893057341666,-11.90637443728386,0 -76.50592859502888,-11.90956335576048,0 -76.4907459418604,-11.89234259638688,0 -76.47480778723406,-11.88835465091638,0 -76.46418488475865,-11.88840555089974,0 -76.44799547436965,-11.89090333237982,0 -76.42300465082715,-11.87019696100521,0 -76.41199812592485,-11.86003019122066,0 -76.40109704099847,-11.85730079500039,0 -76.37826181715452,-11.84174590922085,0 -76.36801444673908,-11.83055997049786,0 -76.35898218959446,-11.82120050456532,0 -76.35266526389087,-11.81421730918134,0 -76.3502497731901,-11.81450962033,0 -76.34306605684431,-11.80986701262167,0 -76.33753116021103,-11.8000946931459,0 -76.33498446609295,-11.79471867321066,0 -76.33070071183813,-11.78783395003904,0 -76.32330286225205,-11.789262202561,0 -76.31481396333965,-11.79540760061707,0 -76.30569628051882,-11.78391836662024,0 -76.29729153209804,-11.76218980785668,0 -76.28687492736168,-11.74663431237088,0 -76.28193076720065,-11.74221366811367,0 -76.27307707548239,-11.73907552195219,0 -76.26877791145056,-11.73584963591381,0 -76.2564681809433,-11.73521355957893,0 -76.26199149767007,-11.72830821823708,0 -76.26706614078591,-11.71573620093947,0 -76.26423051846987,-11.6951251594824,0 -76.25754478865335,-11.68203010713664,0 -76.25379921934092,-11.67027237400471,0 -76.24863666492435,-11.66561241747145,0 -76.24241353682167,-11.66197784313021,0 -76.23468624771944,-11.6536666497341,0 -76.22889820908237,-11.63385763128393,0 -76.21998777266309,-11.62927981485196,0 -76.21070455219392,-11.61878278996863,0 -76.20469555609868,-11.61846046367858,0 -76.19478175613902,-11.60875596502942,0 -76.18806463572591,-11.6021765806358,0 -76.17202666986172,-11.60543951489502,0 -76.14780681101873,-11.6022117946261,0 -76.13860422559553,-11.59877267209207,0 -76.12026287836849,-11.6075576075612,0 -76.08106332868758,-11.59595548497419,0 -76.06005189589771,-11.59475908725725,0 -76.04743424517696,-11.60699988344925,0 -76.00363396099894,-11.62397972477275,0 -75.99238843868083,-11.6292388446032,0 -75.96917906331524,-11.60793692076848,0 -75.9552896384517,-11.59582756439764,0 -75.9533237111493,-11.57279749950452,0 -75.9362791640422,-11.55308440781164,0 -75.9094219982003,-11.52838591961713,0 -75.90851670830665,-11.51237908853494,0 -75.94798137174652,-11.47298193929409,0 -75.86087414722907,-11.41000157305255,0 -75.84727371160464,-11.28434320101301,0 -75.93261664570237,-11.06387504485126,0 -75.96993290683385,-10.94278798666627,0 -76.09102912056275,-10.68788121275172,0 -76.25049840757517,-10.7502095709442,0 -76.43477131946325,-10.97991352647603,0 -76.41144181586422,-11.03699339355964,0 -76.31274746018885,-11.00944664297236,0 -76.22945536586047,-10.85815540030033,0 -76.12232522902713,-10.90744429323642,0 -76.06937192980877,-10.9862572985028,0 -75.98500439585666,-11.2141361433329,0 -75.90395337672973,-11.39465659813432,0 -75.99132575131603,-11.47423904004144,0 -75.95160449239829,-11.52833773456676,0 -75.99937455111954,-11.59512996425355,0 -76.11106848252102,-11.56179586139625,0 -76.19703252033773,-11.59020813711563,0 -76.22474972479624,-11.62518584067837,0 -76.24279567302783,-11.60938268691554,0 -76.23910871470171,-11.64437633076457,0 -76.2567027200176,-11.66715026095556,0 -76.27135037499464,-11.69564556117466,0 -76.27183669728254,-11.72948956317857,0 -76.28846701376091,-11.74186984384254,0 -76.3045039611322,-11.76014089630954,0 -76.31386304441195,-11.78397403718932,0 -76.33444796658131,-11.77965477469781,0 -76.34512744391915,-11.80458127423329,0 -76.38126696544538,-11.83211757353069,0 -76.39123810199112,-11.84438880822552,0 -76.40939648894172,-11.85278983464339,0 -76.42024686362761,-11.85774701573604,0 -76.43173979824995,-11.86950497427075,0 -76.44041620973266,-11.88016854809982,0 -76.44975326298821,-11.88509735538517,0 -76.46632175300081,-11.87973859385724,0 -76.49001577649857,-11.88278074163592,0 -76.50803996252701,-11.89768519615879,0 -76.5276444919547,-11.89853732144063,0 -76.54747769057204,-11.90913440624286,0 -76.57825140178454,-11.90526578650788,0 -76.60250872915073,-11.90661010837429,0 -76.65025467531328,-11.91999870886169,0 -76.67697755890953,-11.91608233185047,0 -76.69983040223248,-11.92705014421566,0 -76.68964624353636,-11.94328023926214,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>z1</name>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.64229417875434,-11.92834866944415,0 -76.63921773753943,-11.92809377682119,0 -76.64011346066299,-11.92296309405324,0 -76.64364445098468,-11.92378450127371,0 -76.64229417875434,-11.92834866944415,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>z2</name>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.62616798298065,-11.91797354190839,0 -76.62396686154588,-11.923521951218,0 -76.61836507579217,-11.92072597774721,0 -76.62038777504389,-11.91585476916738,0 -76.62616798298065,-11.91797354190839,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>CP CHOSICA</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.63733176702227,-11.92177668801013,0 -76.63588513089672,-11.92714919435146,0 -76.62942125970355,-11.92606745918534,0 -76.63054707585184,-11.91934065625744,0 -76.63733176702227,-11.92177668801013,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>CP CASAPALCA</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.24984106522199,-11.66177475215962,0 -76.24687075378456,-11.66477429665985,0 -76.24043175682186,-11.66119929006391,0 -76.23695039949489,-11.65446779721469,0 -76.22970612932214,-11.64190381599092,0 -76.23060585031237,-11.63542920688394,0 -76.23083322904648,-11.62980731085744,0 -76.2331272017949,-11.62065399548448,0 -76.23675622542501,-11.62352100983069,0 -76.23939630962477,-11.6433318952876,0 -76.24984106522199,-11.66177475215962,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>CP MOROCOCHA</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.10091643796487,-11.60288639104312,0 -76.05235793329052,-11.6074333597106,0 -76.04224382241199,-11.59884346040418,0 -76.04301862388746,-11.59581760473905,0 -76.05860163066521,-11.5835542340988,0 -76.07033700515096,-11.58417849977932,0 -76.08591624475595,-11.5890630253312,0 -76.10452457754057,-11.59558910821227,0 -76.10091643796487,-11.60288639104312,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>La Oroya</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-75.93291235611937,-11.53430100014607,0 -75.95609594289675,-11.54906994173578,0 -75.93424974487283,-11.56378682437876,0 -75.91061506381396,-11.53418590768646,0 -75.88958318981449,-11.54749721279024,0 -75.88303171196156,-11.5366337749408,0 -75.90102070990534,-11.5128269948978,0 -75.93016349392467,-11.49863618213468,0 -75.94332461707519,-11.50507728127658,0 -75.93291235611937,-11.53430100014607,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

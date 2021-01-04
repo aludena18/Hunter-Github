@@ -1,0 +1,18 @@
+Script de pruebas.
+
+Transagui - activacion de salida para carga de bateria
+
+linea de codigo 512.135
+
+Salida --> out0
+
+condiciones
+
+ign off --> activa out0
+ign off --> activa timer 22 (5 horas)
+
+timer22 --> desactiva out0
+
+
+ign on --> desactiva out0
+ign on --> desactiva timr22

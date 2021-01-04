@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Transagui_gz_perdida_senal.kml</name>
+	<Style id="style">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style0">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Mis lugares</name>
+		<open>1</open>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<ItemIcon>
+					<state>open</state>
+					<href>:/mysavedplaces_open.png</href>
+				</ItemIcon>
+				<ItemIcon>
+					<state>closed</state>
+					<href>:/mysavedplaces_closed.png</href>
+				</ItemIcon>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Placemark id="circle">
+			<name>Perdida de Señal Chicla Huarochiri</name>
+			<Style>
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>1</scale>
+					<Icon>
+						<href>http://live.3dtracking.net/i/b.gif</href>
+					</Icon>
+					<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>1</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.22016778842146,-11.62817741063614,0 -76.2138163174742,-11.62800927234476,0 -76.20488992587264,-11.62262879341761,0 -76.19596353427107,-11.61623933971329,0 -76.19167199984724,-11.60934529117756,0 -76.18909707919295,-11.59959244367104,0 -76.19647851840193,-11.59656562859116,0 -76.20128503695662,-11.59824719657594,0 -76.20849481478865,-11.60278737953706,0 -76.21536126986678,-11.60665488453851,0 -76.21948114291365,-11.61153122746178,0 -76.22342935458357,-11.61842522194168,0 -76.22360101596053,-11.62599160492878,0 -76.22016778842146,-11.62817741063614,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>Perdida de señal Huayllay Pasco</name>
+			<Style>
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>1</scale>
+					<Icon>
+						<href>http://live.3dtracking.net/i/b.gif</href>
+					</Icon>
+					<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>1</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.30930906815357,-10.97215752903614,0 -76.30450254959888,-10.96272006962261,0 -76.30141264481372,-10.94687794306955,0 -76.29729277176685,-10.92496722321271,0 -76.29351622147388,-10.90811172253532,0 -76.28767973465747,-10.87878087407651,0 -76.30484587235279,-10.87372353934801,0 -76.30827909989185,-10.8851867082388,0 -76.31548887772388,-10.89900935471585,0 -76.32132536454029,-10.91283135911609,0 -76.3220120100481,-10.92698981900683,0 -76.32647520584888,-10.94384424767581,0 -76.333341660927,-10.95597884280955,0 -76.33025175614185,-10.9677758889152,0 -76.32338530106372,-10.97182048210214,0 -76.30930906815357,-10.97215752903614,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>Perdida de señal San pedro</name>
+			<Style>
+				<IconStyle>
+					<color>ff0000ff</color>
+					<scale>1</scale>
+					<Icon>
+						<href>http://live.3dtracking.net/i/b.gif</href>
+					</Icon>
+					<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0000ff</color>
+					<width>1</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000ff</color>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-75.95254963867187,-11.4564335411995,0 -75.91615742675781,-11.43758989935612,0 -75.90036458007812,-11.41134130903856,0 -75.89349812499999,-11.36556873336306,0 -75.90585774414062,-11.28140881206096,0 -75.93607014648437,-11.2834289397716,0 -75.96628254882812,-11.3723004562224,0 -75.97452229492187,-11.40730284879313,0 -75.95254963867187,-11.4564335411995,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>cochera corcona</name>
+			<styleUrl>#stylemap_id2</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.58833821850847,-11.91232516481909,0 -76.58417963940045,-11.91268570378375,0 -76.58038286821635,-11.91189215171107,0 -76.57499022408167,-11.91080254655829,0 -76.57349539147069,-11.91127163924419,0 -76.57215478429207,-11.91186468362838,0 -76.5711595734483,-11.91025315251831,0 -76.57468237045977,-11.9090312798603,0 -76.57704007229923,-11.90831246886554,0 -76.58088855165801,-11.909107629608,0 -76.58706890219622,-11.91027570954159,0 -76.58833821850847,-11.91232516481909,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

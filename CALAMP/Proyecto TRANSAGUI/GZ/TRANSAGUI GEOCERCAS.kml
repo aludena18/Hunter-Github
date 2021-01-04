@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>TRANSAGUI GEOCERCAS.kml</name>
+	<open>1</open>
+	<StyleMap id="stylemap_id1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style12">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style0">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style1">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style9">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style13">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660b0bc8</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id61">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style7">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id62">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="stylemap_id5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style10">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style4">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style3">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style14">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style6">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660b0bc8</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style8">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style5">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style11">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://live.3dtracking.net/i/b.gif</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>660000ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>TRANSAGUI GEOCERCAS</name>
+		<open>1</open>
+		<Placemark>
+			<name>RUTA TRANSAGUI HUARON</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.68964624353636,-11.94328023926214,0 -76.63964805370037,-11.93117554106963,0 -76.59270483292414,-11.91615492076322,0 -76.56012972041574,-11.91992781504362,0 -76.52893057341666,-11.90637443728386,0 -76.50592859502888,-11.90956335576048,0 -76.4907459418604,-11.89234259638688,0 -76.47480778723406,-11.88835465091638,0 -76.46418488475865,-11.88840555089974,0 -76.44799547436965,-11.89090333237982,0 -76.42300465082715,-11.87019696100521,0 -76.41199812592485,-11.86003019122066,0 -76.40109704099847,-11.85730079500039,0 -76.37826181715452,-11.84174590922085,0 -76.36801444673908,-11.83055997049786,0 -76.35898218959446,-11.82120050456532,0 -76.35266526389087,-11.81421730918134,0 -76.3502497731901,-11.81450962033,0 -76.34306605684431,-11.80986701262167,0 -76.33753116021103,-11.8000946931459,0 -76.33498446609295,-11.79471867321066,0 -76.33070071183813,-11.78783395003904,0 -76.32330286225205,-11.789262202561,0 -76.31481396333965,-11.79540760061707,0 -76.30569628051882,-11.78391836662024,0 -76.29729153209804,-11.76218980785668,0 -76.28687492736168,-11.74663431237088,0 -76.28193076720065,-11.74221366811367,0 -76.27307707548239,-11.73907552195219,0 -76.26877791145056,-11.73584963591381,0 -76.2564681809433,-11.73521355957893,0 -76.26199149767007,-11.72830821823708,0 -76.26706614078591,-11.71573620093947,0 -76.26423051846987,-11.6951251594824,0 -76.25754478865335,-11.68203010713664,0 -76.25379921934092,-11.67027237400471,0 -76.24863666492435,-11.66561241747145,0 -76.24241353682167,-11.66197784313021,0 -76.23468624771944,-11.6536666497341,0 -76.22889820908237,-11.63385763128393,0 -76.21998777266309,-11.62927981485196,0 -76.21070455219392,-11.61878278996863,0 -76.20469555609868,-11.61846046367858,0 -76.19478175613902,-11.60875596502942,0 -76.18806463572591,-11.6021765806358,0 -76.17202666986172,-11.60543951489502,0 -76.14780681101873,-11.6022117946261,0 -76.13860422559553,-11.59877267209207,0 -76.12026287836849,-11.6075576075612,0 -76.08106332868758,-11.59595548497419,0 -76.06005189589771,-11.59475908725725,0 -76.04743424517696,-11.60699988344925,0 -76.00363396099894,-11.62397972477275,0 -75.99238843868083,-11.6292388446032,0 -75.96917906331524,-11.60793692076848,0 -75.9552896384517,-11.59582756439764,0 -75.9533237111493,-11.57279749950452,0 -75.9362791640422,-11.55308440781164,0 -75.9094219982003,-11.52838591961713,0 -75.90851670830665,-11.51237908853494,0 -75.94798137174652,-11.47298193929409,0 -75.86087414722907,-11.41000157305255,0 -75.84727371160464,-11.28434320101301,0 -75.93261664570237,-11.06387504485126,0 -75.96993290683385,-10.94278798666627,0 -76.09102912056275,-10.68788121275172,0 -76.25049840757517,-10.7502095709442,0 -76.43477131946325,-10.97991352647603,0 -76.41144181586422,-11.03699339355964,0 -76.31274746018885,-11.00944664297236,0 -76.22945536586047,-10.85815540030033,0 -76.12232522902713,-10.90744429323642,0 -76.06937192980877,-10.9862572985028,0 -75.98500439585666,-11.2141361433329,0 -75.90395337672973,-11.39465659813432,0 -75.99132575131603,-11.47423904004144,0 -75.95160449239829,-11.52833773456676,0 -75.99937455111954,-11.59512996425355,0 -76.11106848252102,-11.56179586139625,0 -76.19703252033773,-11.59020813711563,0 -76.22474972479624,-11.62518584067837,0 -76.24279567302783,-11.60938268691554,0 -76.23910871470171,-11.64437633076457,0 -76.2567027200176,-11.66715026095556,0 -76.27135037499464,-11.69564556117466,0 -76.27183669728254,-11.72948956317857,0 -76.28846701376091,-11.74186984384254,0 -76.3045039611322,-11.76014089630954,0 -76.31386304441195,-11.78397403718932,0 -76.33444796658131,-11.77965477469781,0 -76.34512744391915,-11.80458127423329,0 -76.38126696544538,-11.83211757353069,0 -76.39123810199112,-11.84438880822552,0 -76.40939648894172,-11.85278983464339,0 -76.42024686362761,-11.85774701573604,0 -76.43173979824995,-11.86950497427075,0 -76.44041620973266,-11.88016854809982,0 -76.44975326298821,-11.88509735538517,0 -76.46632175300081,-11.87973859385724,0 -76.49001577649857,-11.88278074163592,0 -76.50803996252701,-11.89768519615879,0 -76.5276444919547,-11.89853732144063,0 -76.54747769057204,-11.90913440624286,0 -76.57825140178454,-11.90526578650788,0 -76.60250872915073,-11.90661010837429,0 -76.65025467531328,-11.91999870886169,0 -76.67697755890953,-11.91608233185047,0 -76.69983040223248,-11.92705014421566,0 -76.68964624353636,-11.94328023926214,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>PERDIDA DE COBERTURA TICLIO</name>
+			<styleUrl>#stylemap_id62</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.22016778842146,-11.62817741063614,0 -76.2138163174742,-11.62800927234476,0 -76.20488992587264,-11.62262879341761,0 -76.19596353427107,-11.61623933971329,0 -76.19167199984724,-11.60934529117756,0 -76.18909707919295,-11.59959244367104,0 -76.19647851840193,-11.59656562859116,0 -76.20128503695662,-11.59824719657594,0 -76.20849481478865,-11.60278737953706,0 -76.21536126986678,-11.60665488453851,0 -76.21948114291365,-11.61153122746178,0 -76.22342935458357,-11.61842522194168,0 -76.22360101596053,-11.62599160492878,0 -76.22016778842146,-11.62817741063614,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDIDA DE COBERTURA CASAPALCA</name>
+			<styleUrl>#stylemap_id6</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.25430157737064,-11.66415210920009,0 -76.25721736486132,-11.66914625575986,0 -76.25903026064873,-11.67631747663746,0 -76.26147826191553,-11.68165880929166,0 -76.26214354880345,-11.68775654884407,0 -76.26033778855009,-11.68828192689958,0 -76.25882037478679,-11.68759209167862,0 -76.256784772785,-11.68430634070735,0 -76.25488404948635,-11.67800027725937,0 -76.25445447945236,-11.6747892472083,0 -76.25379655445587,-11.67149777169939,0 -76.24767358818717,-11.66921957254998,0 -76.25139726265613,-11.66355592657855,0 -76.25430157737064,-11.66415210920009,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDIDA DE COBERTURA RIO BLANCO</name>
+			<styleUrl>#stylemap_id60</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.28730026901131,-11.72689216589449,0 -76.29782689039673,-11.73676591388622,0 -76.2820347539112,-11.75402722392929,0 -76.2694220730741,-11.75155566081338,0 -76.25768790491617,-11.75239301753867,0 -76.24350226125917,-11.74861253339286,0 -76.24094046759602,-11.73663923027414,0 -76.25023969448519,-11.72173410367099,0 -76.26402258297794,-11.71639646661365,0 -76.28730026901131,-11.72689216589449,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDIDA DE COBERTURA SAN MATEO</name>
+			<styleUrl>#stylemap_id61</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.32701500734485,-11.77967568806336,0 -76.33599402977011,-11.78196472732661,0 -76.3373714852837,-11.78980528020404,0 -76.33838031627327,-11.79371688907167,0 -76.33963757071629,-11.7988950104307,0 -76.34522700091922,-11.80572755940851,0 -76.35247656028226,-11.80759196972556,0 -76.3586557823532,-11.81158276900115,0 -76.36330334700519,-11.81945299607495,0 -76.35846599972835,-11.82186400203226,0 -76.35559917962755,-11.81865405638254,0 -76.35127499459837,-11.81595901627868,0 -76.32792090244102,-11.8109304175044,0 -76.32348020335246,-11.81077382386505,0 -76.31951867884749,-11.80683666692256,0 -76.32478761020084,-11.80364584437278,0 -76.32987213963449,-11.80037147363979,0 -76.33296624293493,-11.79713442075938,0 -76.33189908998688,-11.79248238052294,0 -76.32889804909658,-11.78495213754957,0 -76.32615697738156,-11.78647911880697,0 -76.32197169593663,-11.78775523637887,0 -76.31737637735603,-11.7888542676212,0 -76.31331839465754,-11.79229124460832,0 -76.30868862363016,-11.79076397676813,0 -76.31432201120693,-11.78456430284291,0 -76.32701500734485,-11.77967568806336,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>PERDIDA DE COBERTURA HUAYLLAY</name>
+			<styleUrl>#stylemap_id1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.30930906815357,-10.97215752903614,0 -76.30450254959888,-10.96272006962261,0 -76.30141264481372,-10.94687794306955,0 -76.29395135142205,-10.92647201884324,0 -76.26499185967761,-10.89978505596878,0 -76.26021708267112,-10.87077738913339,0 -76.26673916573034,-10.84829645000027,0 -76.28747311536631,-10.84461025897027,0 -76.30484587235279,-10.87372353934801,0 -76.30827909989185,-10.8851867082388,0 -76.31548887772388,-10.89900935471585,0 -76.32132536454029,-10.91283135911609,0 -76.3220120100481,-10.92698981900683,0 -76.32647520584888,-10.94384424767581,0 -76.333341660927,-10.95597884280955,0 -76.33025175614185,-10.9677758889152,0 -76.30930906815357,-10.97215752903614,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>PERDIDA DE COBERTURA SAN PREDRO</name>
+			<styleUrl>#stylemap_id5</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-75.92694654715916,-11.47053832854762,0 -75.87607813764689,-11.40490194583866,0 -75.87105214218295,-11.35915740678782,0 -75.93272924997217,-11.20362441092851,0 -75.96189827982637,-11.21095284185026,0 -75.90593796158943,-11.37500430651728,0 -75.97175962542752,-11.45294062641721,0 -75.92694654715916,-11.47053832854762,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="circle">
+			<name>PERDIDA DE COBERTURA SANTA CLARA DE CHIRO</name>
+			<styleUrl>#stylemap_id3</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.00747794638518,-10.99534204902378,0 -76.00800288005955,-10.97119028181967,0 -76.0171944316287,-10.96859550908051,0 -76.04384269659025,-10.96979050163811,0 -76.03540857385553,-10.98387748601294,0 -76.02615898318585,-10.99663130032304,0 -76.00747794638518,-10.99534204902378,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDIDA DE COBERTURA HUAYRE</name>
+			<styleUrl>#stylemap_id30</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-76.01698368635545,-11.01892053491824,0 -76.01417358107342,-11.03894746861204,0 -76.00973014343565,-11.06928834314739,0 -76.0065332199253,-11.09152127774714,0 -76.00355571074545,-11.11472258015464,0 -75.99036316922481,-11.11359789452661,0 -75.99243506388504,-11.08403852808171,0 -75.99524992385226,-11.07185416117675,0 -75.99494190772641,-11.05737910261606,0 -75.99500352415178,-11.05153422430952,0 -75.99489676906454,-11.05155617486673,0 -75.99258113001216,-11.03703483303442,0 -75.99938772366265,-11.02433484722144,0 -76.00163221228333,-11.01831291560018,0 -76.00437883474515,-11.01199573804593,0 -76.01111331791323,-11.00339289319185,0 -76.01944013177673,-11.00659332318583,0 -76.01698368635545,-11.01892053491824,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
