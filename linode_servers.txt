@@ -1,0 +1,12 @@
+Database: hunter01
+96.126.127.74
+user: root
+pass: MeteorSvelte2020
+--------------------------
+Development: hunter02
+172.104.251.31
+user: root
+pass: MeteorSvelte2020
+
+
+Ejemplo con Git Bash:    ssh root@172.104.251.31

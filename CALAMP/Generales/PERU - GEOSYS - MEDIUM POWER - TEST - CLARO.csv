@@ -1220,7 +1220,7 @@ parameter_id,parameter_index,parameter_value
 908,0,06
 909,0,34
 913,0,000A
-1024,1,17
+1024,1,1E
 1024,3,00
 1024,4,00
 1024,5,00
@@ -1241,7 +1241,7 @@ parameter_id,parameter_index,parameter_value
 1024,20,10
 1024,21,00
 1024,22,00
-1024,23,05
+1024,23,1D
 1024,24,0A
 1024,25,01
 1024,26,FF
@@ -1326,3 +1326,5 @@ parameter_id,parameter_index,parameter_value
 2313,0,0000
 2318,0,2A323238393900
 2319,0,31302E34302E302E3500
+
+Ø
