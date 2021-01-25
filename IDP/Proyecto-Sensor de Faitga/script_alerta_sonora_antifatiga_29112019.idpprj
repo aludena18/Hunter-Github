@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FileVersion>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Patch>0</Patch>
+  </FileVersion>
+  <SDKVersion>
+    <Major>1</Major>
+    <Minor>3</Minor>
+    <Patch>1</Patch>
+  </SDKVersion>
+  <Name>idp_agente_avl</Name>
+  <Services>
+    <Service>
+      <Name>idp_agente_avl</Name>
+      <SIN>128</SIN>
+      <Properties>
+        <Property xsi:type="BooleanProperty">
+          <Name>hunterProMsg</Name>
+          <PIN>1</PIN>
+        </Property>
+        <Property xsi:type="UnsignedIntProperty">
+          <Name>SyncFatigueSensorTime</Name>
+          <Description>Tiempo de sincronización del sensor de fatiga. Medido en segundos.</Description>
+          <PIN>2</PIN>
+          <Value>7</Value>
+          <Maximum>15</Maximum>
+          <Minimum>1</Minimum>
+        </Property>
+      </Properties>
+      <ForwardMessages>
+        <Message>
+          <Name>getReport</Name>
+          <MIN>1</MIN>
+        </Message>
+        <Message>
+          <Name>setIgnitionONIntervalCell</Name>
+          <Description>Intervalo de reportes en ignicion ON por GPRS. Medida en segundos.</Description>
+          <MIN>2</MIN>
+          <Fields>
+            <Field xsi:type="UnsignedIntField">
+              <Name>value</Name>
+              <Description>Medida en segundos.</Description>
+              <Size>20</Size>
+              <Default>120</Default>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>setIgnitionONIntervalSat</Name>
+          <Description>Intervalo de reportes en ignicion ON por SATELITE. Medida en segundos.</Description>
+          <MIN>3</MIN>
+          <Fields>
+            <Field xsi:type="UnsignedIntField">
+              <Name>value</Name>
+              <Description>Medida en segundos.</Description>
+              <Size>20</Size>
+              <Default>900</Default>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>setIgnitionOFFIntervalCell</Name>
+          <Description>Intervalo de reportes en ignicion OFF por GPRS. Medida en segundos.</Description>
+          <MIN>4</MIN>
+          <Fields>
+            <Field xsi:type="UnsignedIntField">
+              <Name>value</Name>
+              <Description>Medida en segundos.</Description>
+              <Size>20</Size>
+              <Default>1800</Default>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>setIgnitionOFFIntervalSat</Name>
+          <Description>Intervalo de reportes en ignicion OFF por SATELITE. Medida en segundos.</Description>
+          <MIN>5</MIN>
+          <Fields>
+            <Field xsi:type="UnsignedIntField">
+              <Name>value</Name>
+              <Description>Medida en segundos.</Description>
+              <Size>20</Size>
+              <Default>3600</Default>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>enableHproReport</Name>
+          <Description>habilita el tipo de reporte para Hunter Pro</Description>
+          <MIN>6</MIN>
+          <Fields>
+            <Field xsi:type="BooleanField">
+              <Name>value</Name>
+              <Description>true or false</Description>
+            </Field>
+          </Fields>
+        </Message>
+      </ForwardMessages>
+      <ReturnMessages>
+        <Message>
+          <Name>myMsg</Name>
+          <MIN>1</MIN>
+        </Message>
+        <Message>
+          <Name>RequestReport</Name>
+          <Description>Generated every request report by command message.</Description>
+          <MIN>2</MIN>
+          <Fields>
+            <Field xsi:type="SignedIntField">
+              <Name>Latitude</Name>
+              <Description>GPS latitude in milli-minute resolution</Description>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Longitude</Name>
+              <Description>GPS longitude in milli-minute resolution</Description>
+              <Size>25</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Speed</Name>
+              <Description>GPS speed (or @{Properties.ExternalSpeedSource} if enabled) in km/h</Description>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Heading</Name>
+              <Description>GNSS heading in degrees or 361 if vehicle is stationary.</Description>
+              <Size>9</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>EventTime</Name>
+              <Description>Event time in seconds since the epoch</Description>
+              <Size>31</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>GpsFixAge</Name>
+              <Description>GPS fix age in seconds relative to the Event Time</Description>
+              <Optional>true</Optional>
+              <Size>10</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Odometer</Name>
+              <Description>GPS-based odometer in km. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>19</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>DigitalPorts</Name>
+              <Description>See @{Properties.DigPorts}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>18</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>AvlStates</Name>
+              <Description>See @{Properties.AvlStates}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="DataField">
+              <Name>DriverId</Name>
+              <Description>See @{Properties.DriverId}. Populated if a driver has logged in and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Fixed>true</Fixed>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor1</Name>
+              <Description>Value of property referenced in @{Properties.Sensor1Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor2</Name>
+              <Description>Value of property referenced in @{Properties.Sensor2Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor3</Name>
+              <Description>Value of property referenced in @{Properties.Sensor3Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor4</Name>
+              <Description>Value of property referenced in @{Properties.Sensor4Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>FatigueAlarm</Name>
+          <Description>Fatigue is detected.</Description>
+          <MIN>3</MIN>
+          <Fields>
+            <Field xsi:type="SignedIntField">
+              <Name>Latitude</Name>
+              <Description>GPS latitude in milli-minute resolution</Description>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Longitude</Name>
+              <Description>GPS longitude in milli-minute resolution</Description>
+              <Size>25</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Speed</Name>
+              <Description>GPS speed (or @{Properties.ExternalSpeedSource} if enabled) in km/h</Description>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Heading</Name>
+              <Description>GNSS heading in degrees or 361 if vehicle is stationary.</Description>
+              <Size>9</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>EventTime</Name>
+              <Description>Event time in seconds since the epoch</Description>
+              <Size>31</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>GpsFixAge</Name>
+              <Description>GPS fix age in seconds relative to the Event Time</Description>
+              <Optional>true</Optional>
+              <Size>10</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Odometer</Name>
+              <Description>GPS-based odometer in km. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>19</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>DigitalPorts</Name>
+              <Description>See @{Properties.DigPorts}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>18</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>AvlStates</Name>
+              <Description>See @{Properties.AvlStates}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="DataField">
+              <Name>DriverId</Name>
+              <Description>See @{Properties.DriverId}. Populated if a driver has logged in and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Fixed>true</Fixed>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor1</Name>
+              <Description>Value of property referenced in @{Properties.Sensor1Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor2</Name>
+              <Description>Value of property referenced in @{Properties.Sensor2Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor3</Name>
+              <Description>Value of property referenced in @{Properties.Sensor3Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor4</Name>
+              <Description>Value of property referenced in @{Properties.Sensor4Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>DistractionAlarm</Name>
+          <Description>Distraction is detected</Description>
+          <MIN>4</MIN>
+          <Fields>
+            <Field xsi:type="SignedIntField">
+              <Name>Latitude</Name>
+              <Description>GPS latitude in milli-minute resolution</Description>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Longitude</Name>
+              <Description>GPS longitude in milli-minute resolution</Description>
+              <Size>25</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Speed</Name>
+              <Description>GPS speed (or @{Properties.ExternalSpeedSource} if enabled) in km/h</Description>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Heading</Name>
+              <Description>GNSS heading in degrees or 361 if vehicle is stationary.</Description>
+              <Size>9</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>EventTime</Name>
+              <Description>Event time in seconds since the epoch</Description>
+              <Size>31</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>GpsFixAge</Name>
+              <Description>GPS fix age in seconds relative to the Event Time</Description>
+              <Optional>true</Optional>
+              <Size>10</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Odometer</Name>
+              <Description>GPS-based odometer in km. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>19</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>DigitalPorts</Name>
+              <Description>See @{Properties.DigPorts}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>18</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>AvlStates</Name>
+              <Description>See @{Properties.AvlStates}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="DataField">
+              <Name>DriverId</Name>
+              <Description>See @{Properties.DriverId}. Populated if a driver has logged in and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Fixed>true</Fixed>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor1</Name>
+              <Description>Value of property referenced in @{Properties.Sensor1Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor2</Name>
+              <Description>Value of property referenced in @{Properties.Sensor2Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor3</Name>
+              <Description>Value of property referenced in @{Properties.Sensor3Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor4</Name>
+              <Description>Value of property referenced in @{Properties.Sensor4Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+          </Fields>
+        </Message>
+        <Message>
+          <Name>NoPortraitAlarm</Name>
+          <Description>No portrait is detected.</Description>
+          <MIN>5</MIN>
+          <Fields>
+            <Field xsi:type="SignedIntField">
+              <Name>Latitude</Name>
+              <Description>GPS latitude in milli-minute resolution</Description>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Longitude</Name>
+              <Description>GPS longitude in milli-minute resolution</Description>
+              <Size>25</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Speed</Name>
+              <Description>GPS speed (or @{Properties.ExternalSpeedSource} if enabled) in km/h</Description>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Heading</Name>
+              <Description>GNSS heading in degrees or 361 if vehicle is stationary.</Description>
+              <Size>9</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>EventTime</Name>
+              <Description>Event time in seconds since the epoch</Description>
+              <Size>31</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>GpsFixAge</Name>
+              <Description>GPS fix age in seconds relative to the Event Time</Description>
+              <Optional>true</Optional>
+              <Size>10</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>Odometer</Name>
+              <Description>GPS-based odometer in km. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>19</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>DigitalPorts</Name>
+              <Description>See @{Properties.DigPorts}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>18</Size>
+            </Field>
+            <Field xsi:type="UnsignedIntField">
+              <Name>AvlStates</Name>
+              <Description>See @{Properties.AvlStates}. Populated if corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>24</Size>
+            </Field>
+            <Field xsi:type="DataField">
+              <Name>DriverId</Name>
+              <Description>See @{Properties.DriverId}. Populated if a driver has logged in and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Fixed>true</Fixed>
+              <Size>8</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor1</Name>
+              <Description>Value of property referenced in @{Properties.Sensor1Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor2</Name>
+              <Description>Value of property referenced in @{Properties.Sensor2Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor3</Name>
+              <Description>Value of property referenced in @{Properties.Sensor3Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+            <Field xsi:type="SignedIntField">
+              <Name>Sensor4</Name>
+              <Description>Value of property referenced in @{Properties.Sensor4Source}. Populated if property is defined, value is numeric, and corresponding bit is set in @{Properties.OptionalFieldsInMsgs}.</Description>
+              <Optional>true</Optional>
+              <Size>16</Size>
+            </Field>
+          </Fields>
+        </Message>
+      </ReturnMessages>
+      <SourceFiles>
+        <SourceFile>
+          <Name>main.lua</Name>
+          <Source>--
+-- Service: script_alerta_sonora
+-- Created: 2018-10-08
+--
+-- Ultima modificación: 08-01-2019
+-- Realizada por: Abel Ludeña
+-- Motivo:  mejorar el comportamiento cuando pierde señal GPRS y tx por SAT
+--          cambiar la configuracion del utility agent de acuerdo a la plataforma donde reporte
+--          geosys o hunter pro. En este último sobretodo la confi no guarda en flash 
+--          msjs cuando pierde cobertura GPRS, para ser enviados cuando recupera cobertura.
+
+module(..., package.seeall)
+
+--
+-- Version information (required)
+--
+_VERSION = "1.0.4"
+
+--
+-- Run service (required)
+--
+
+
+REQUEST_REPORT_MIN = 2
+FATIGUE_ALARM_MIN = 3
+DISTRACTION_ALARM_MIN = 4
+NO_PORTRAIT_ALARM_MIN = 5
+
+local rs232auxConfig = { 
+                         maxRxSize = 4096, 
+                         maxTxSize = 4096 
+                         --minFrameSize = 1, 
+                         --frameStart = 0xAA -- cabecera en caso existiese
+                         --frameEnd = 0x0A,   -- '\n'  -- fin de trama en caso existiese
+                        }
+
+messageHandle  = nil
+
+local RS232auxHandle = nil
+
+local speeding = false
+local driverId = false
+local seatBeltViolation = false
+
+local fatigueTimer
+
+local avlStateQ, msgQ, fatigueTimerQ, auxSerQ, serverConnQ
+local _
+
+local stationaryIntvCell_initialValue
+local stationaryIntvSat_initialValue
+
+local myUtilityConfigTable_buffMsg
+local myUtilityConfigTable_nobuffMsg
+
+
+function traceIntervalValues()
+  tracef("    %s","MovingIntervalCell = "..svc.AVL.properties.MovingIntervalCell)
+  tracef("    %s","MovingIntervalSat = "..svc.AVL.properties.MovingIntervalSat)
+  tracef("    %s","StationaryIntervalCell = "..svc.AVL.properties.StationaryIntervalCell)
+  tracef("    %s","StationaryIntervalSat = "..svc.AVL.properties.StationaryIntervalSat)
+  trace("*********************************************")
+end
+
+function alarmDebug(dbgStr)
+  tracef("  %s %s %s!!!",_NAME,"Alarm detected --&gt;",dbgStr)
+end
+
+function insertDebug(level, dbgStr)
+    
+    tracef( "%s : %s", _NAME, dbgStr)
+    svc.log.addDebug(_SIN, level, dbgStr)
+
+end
+
+function timersArm()
+  fatigueTimer:arm(properties.SyncFatigueSensorTime*10)
+end
+
+function timersDisarm()
+  fatigueTimer:disarm()
+end
+
+-- -----------------------------------------------------
+-- Connect to RS232 aux handle 
+-- -----------------------------------------------------
+local function connectRS232aux()
+    local handle, err = svc.serial.connect('rs232aux')
+    if handle then
+        insertDebug( svc.log.INFO, 'Serial AUX Handle has been assigned')
+        return handle
+    else
+        insertDebug( svc.log.INFO, 'Serial AUX Handle has not been assigned: '.. err)
+        return nil
+    end
+ end
+
+-- -----------------------------------------------------
+-- Disconnect to RS232 aux handle 
+-- -----------------------------------------------------
+function disconnectRS232aux()
+  if RS232auxHandle ~= nil then
+     RS232auxHandle:flush( '*b' )
+     --handle:disconnect()
+     if svc.serial.disconnect(RS232auxHandle) then
+          RS232auxHandle = nil
+     end
+  end
+  return ( RS232auxHandle == nil )  
+end
+
+-- -----------------------------------------------------
+-- Send Custom Message
+-- -----------------------------------------------------
+local function sendMessage(min)
+  --trace("-----------------"..svc.AVL.properties.DigPorts)
+  local msgFields = {
+                          Latitude      = svc.position.properties.latitude,
+                          Longitude     = svc.position.properties.longitude,
+                          Speed         = svc.position.properties.speed,
+                          Heading       = svc.position.properties.heading,
+                          EventTime     = os.time(),
+                          GpsFixAge     = svc.position.properties.fixTime,
+                          Odometer      = svc.AVL.properties.Odometer,
+                      } 
+                            
+  local options
+  if min==2 then
+    options =  {send=true, log=true, lifetime=10080, transports={ {2, 1}, {1, 10} }, persistent=true}
+  else
+    if not svc.ip.properties.serverConnected and properties.hunterProMsg then
+      options =  {send=false, log=true, lifetime=10080, transports={nil}, persistent=false }
+    else
+      options =  {send=true, log=true, lifetime=10080, transports={ {2, 1} }, persistent=true}
+    end
+  end
+  
+  local refNo, err = messageHandle:send(min, msgFields, options)
+  
+  if (not err) then
+    insertDebug(svc.log.INFO, string.format("%s: message sent (RefNo = %d). (MIN = %s)", _NAME, refNo, min) )
+    --local res, err = user.dataExtraction.insertRegister(_SIN, min, refNo, miString, noBits, SAVE_TO_FILE)        
+  else    
+    insertDebug(svc.log.ERROR, string.format("%s: (MIN = %s) message not sent: %s", _NAME, min, err))
+    -- Message was not placed in Tx queue but it goes to the extract table and file
+    --local res, err = user.dataExtraction.insertRegister(_SIN, min, nil , miString, noBits, SAVE_TO_FILE)   
+  end
+ 
+ 
+end
+
+
+
+function evaluaEstados(e,arg)
+  trace("*********** AVL state: ", e, " has changed to: ", tostring(arg))
+
+  if e=="IgnitionOn" then
+    if arg==true then
+        --
+    end
+  end
+
+  if e=="Speeding" then
+    speeding = arg
+    if arg==true then
+        trace("******************* ALERTA SONORA ACTIVADA *******************")
+        svc.eio.writePort(3, 0)
+    elseif arg==false then
+        trace("******************* ALERTA SONORA DESACTIVADA *******************")
+        svc.eio.writePort(3, 1)
+    end
+  end
+
+  if e=="LoggedIn" then
+    driverId = arg
+  end
+
+end
+
+
+function eventosAVL(min,fields)
+
+  if min == 4 then -- ignition ON
+      trace("***************  IGNITION ON  ***************")
+      svc.AVL.properties.MovingIntervalCell     = svc.AVL.properties.MovingIntervalCell
+      svc.AVL.properties.MovingIntervalSat      = svc.AVL.properties.MovingIntervalSat
+      svc.AVL.properties.StationaryIntervalCell = svc.AVL.properties.MovingIntervalCell
+      svc.AVL.properties.StationaryIntervalSat  = svc.AVL.properties.MovingIntervalSat
+      timersArm()
+      traceIntervalValues()
+
+    elseif min == 5 then -- ignition OFF
+      trace("***************  IGNITION OFF  ***************")
+      svc.AVL.properties.StationaryIntervalCell = stationaryIntvCell_initialValue
+      svc.AVL.properties.StationaryIntervalSat  = stationaryIntvSat_initialValue
+      timersDisarm()
+      traceIntervalValues()
+    end
+
+end
+
+function mensajeRecibido(arg)
+
+  trace("**************** MENSAJE RECIBIDO ****************")
+  trace(arg)
+
+  if (arg.min) == 1 then
+    trace("Send Custom Report")
+    sendMessage(REQUEST_REPORT_MIN)
+    trace("-----------------------------------------------")
+  elseif (arg.min) == 2 then
+    svc.AVL.properties.MovingIntervalCell = arg.fields.value
+    if svc.eio.properties.port1Value==1 then
+      svc.AVL.properties.StationaryIntervalCell = svc.AVL.properties.MovingIntervalCell
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 3 then
+    svc.AVL.properties.MovingIntervalSat = arg.fields.value
+    if svc.eio.properties.port1Value==1 then
+      svc.AVL.properties.StationaryIntervalSat = svc.AVL.properties.MovingIntervalSat
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 4 then
+    stationaryIntvCell_initialValue = arg.fields.value
+    if svc.eio.properties.port1Value==0 then
+      svc.AVL.properties.StationaryIntervalCell = stationaryIntvCell_initialValue
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 5 then
+    stationaryIntvSat_initialValue = arg.fields.value
+    if svc.eio.properties.port1Value==0 then
+      svc.AVL.properties.StationaryIntervalSat  = stationaryIntvSat_initialValue
+    end
+    traceIntervalValues()
+  elseif (arg.min) == 6 then
+    properties.hunterProMsg = arg.fields.value
+  end
+
+
+end
+
+-- -----------------------------------------------------
+-- Syncup Fatigue Sensor
+-- -----------------------------------------------------
+function syncFatigueSensor()
+  
+  if svc.eio.properties.port1Value==1 then
+  
+    fatigueTimer:arm(properties.SyncFatigueSensorTime*10)
+    
+    local velNudos = svc.position.properties.speed
+    local velKmh = velNudos*0.1852
+    
+    if velKmh&gt;255 then
+      velKmh = 0
+    end
+  
+    local vel
+    if velNudos&gt;9 then
+      vel= string.format("%i",velKmh)
+    else
+      vel="0"
+    end
+  
+    --tracef("  %s","VELOCIDAD = "..vel.." kmh")
+  
+    local velData = tonumber(vel)
+    local checksum = 170 + 117 + 85 + velData
+    
+    local sumSS
+    if checksum&gt;255 then
+      sum = checksum - 256
+    elseif checksum&lt;256 then
+      sum = checksum
+    end
+    
+    --tracef("  %s","CHECKSUM = "..checksum)
+    --tracef("  %s","SUM = "..sum)
+    
+    --RS232auxHandle.write(RS232auxHandle, 170, 117, 85, velData, 0, 0, 0, 0, 0, sum)
+    
+    local data = { 0xAA, 0x75, 0x55, velData, 0x00, 0x00, 0x00, 0x00, 0x00, sum }
+    RS232auxHandle:writeframe(data)
+    
+    --tracef("%s %s --&gt; %s : %s",_NAME,"Timer sync antifatiga","Velocidad",vel.." kmh")
+    
+  end
+  
+end
+
+-- ---------------------------------------------------------------------
+-- CHECK FATIGUE SENSOR ALARM
+-- ---------------------------------------------------------------------
+function fatigueSensorAlarm(data)
+  
+  if string.sub(data,1,2) == string.char(0xAA, 0x75) then
+    local len = string.len(data)
+    
+    if len==10 then        
+      if string.sub(data,8,9) == string.char(0x51, 0x01) then
+        alarmDebug("FATIGUE REMIND" )
+      elseif string.sub(data,8,9) == string.char(0x51, 0x02) then
+        sendMessage(FATIGUE_ALARM_MIN)
+        alarmDebug("FATIGUE ALARM" )
+      elseif string.sub(data,8,9) == string.char(0x51, 0x03) then
+        sendMessage(FATIGUE_ALARM_MIN)
+        alarmDebug("FATIGUE WARNING" )
+      elseif string.sub(data,8,9) == string.char(0x52, 0x00) then
+        sendMessage(DISTRACTION_ALARM_MIN)
+        alarmDebug("DISTRACTION ALARM" )
+      elseif string.sub(data,8,9) == string.char(0x53, 0x00) then
+        sendMessage(NO_PORTRAIT_ALARM_MIN)
+        alarmDebug("NO PORTRAIT ALARM" )
+      end
+    end
+    
+    if len==20 and (string.sub(data,11,12) == string.char(0xAA, 0x75)) then    
+      if string.sub(data,18,19) == string.char(0x51, 0x01) then
+        alarmDebug("FATIGUE REMIND" )
+      elseif string.sub(data,18,19) == string.char(0x51, 0x02) then
+        sendMessage(FATIGUE_ALARM_MIN)
+        alarmDebug("FATIGUE ALARM" )
+      elseif string.sub(data,18,19) == string.char(0x51, 0x03) then
+        sendMessage(FATIGUE_ALARM_MIN)
+        alarmDebug("FATIGUE WARNING" )
+      elseif string.sub(data,18,19) == string.char(0x52, 0x00) then
+        sendMessage(DISTRACTION_ALARM_MIN)
+        alarmDebug("DISTRACTION ALARM" )
+      elseif string.sub(data,18,19) == string.char(0x53, 0x00) then
+        sendMessage(NO_PORTRAIT_ALARM_MIN)
+        alarmDebug("NO PORTRAIT ALARM" )
+      end    
+    end
+
+  end
+  
+  RS232auxHandle:flush('*r')
+end
+
+
+----------------------------------
+-- Shows RS232 frame in trace
+---------------------------------
+function showFrame(frame, fieldName)
+  local hexFrame = ""                
+  for i=1, string.len(frame) do
+       hexFrame = hexFrame .. " ".. string.format("%02x",string.byte(string.sub(frame,i,i)))
+       if i&gt;= 100 then
+           tracef("%s %s%s",_NAME, fieldName, hexFrame)
+           hexFrame = ""           
+       end
+  end                
+  tracef("%s %s%s",_NAME, fieldName, hexFrame)
+end
+
+
+------------------------------------
+-- Change message definition
+------------------------------------
+function changeMsgDef(args)
+
+  if args then
+    trace("****************** SERVIDOR CONECTADO!! ******************")
+    local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_buffMsg,126)
+    tracef("%s %s : %s",_NAME, "utility config buff msg",tostring(res))
+  else
+    trace("****************** SERVIDOR DESCONECTADO!! ******************")
+    if properties.hunterProMsg then
+      local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_nobuffMsg,126)
+      tracef("%s %s : %s",_NAME, "utility config no buff",tostring(res))
+    end
+  end
+    
+end
+
+
+------------------------------------
+-- Change properties SIN128
+------------------------------------
+function onConfigChange(propList)
+  
+  for i=1, #propList do
+ 
+     if ( propList[i].name == "hunterProMsg") then
+          
+          if properties.hunterProMsg then
+            if svc.ip.properties.serverConnected then
+              local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_buffMsg,126)
+              tracef("%s %s : %s",_NAME, "utility config buff msg",tostring(res))
+            else
+              local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_nobuffMsg,126)
+              tracef("%s %s : %s",_NAME, "utility config no buff",tostring(res))
+            end
+          else
+            local res, err = svc.Utility.SetMsgConfig(myUtilityConfigTable_buffMsg,126)
+            tracef("%s %s : %s",_NAME, "utility config buff msg",tostring(res))
+          end
+          
+     end
+ 
+ end
+
+end
+
+
+
+function entry()
+  trace(_NAME, ": service started")
+  --sched.delay(-1)
+  
+
+  while true do
+    
+    --local scs, fmr = RS232auxHandle:getFrame( 0, 1000 )
+    RS232auxHandle:eventOnFrame( 0, 1000 )
+
+    local args = {sched.waitQ(-1, avlStateQ, msgQ, fatigueTimerQ, auxSerQ, serverConnQ)}
+    local q, event, arguments = table.remove(args,1), table.remove(args,1), table.remove(args,1)
+
+    if q == avlStateQ then
+      evaluaEstados(event, arguments)
+    elseif q == msgQ then
+      mensajeRecibido(arguments)
+    elseif q == fatigueTimerQ then
+      syncFatigueSensor()
+    elseif q == auxSerQ and tostring(args[1])~='' then
+      showFrame(args[1], "Frame received (aux) -&gt;")
+      fatigueSensorAlarm(args[1])
+    elseif q == serverConnQ then
+      changeMsgDef(arguments)
+    end
+
+  end
+
+end
+
+--
+-- Initialize service (required)
+--
+function init()
+
+  svc.AVL.MSG_RegisterEventNotify(eventosAVL)
+  messageHandle = svc.message.register(_SIN)
+
+  if (not messageHandle) then
+    trace(svc.log.ERROR, string.format("%s:SIN %d already registered", _NAME, _SIN))
+    return
+  end
+  
+  disconnectRS232aux()
+  RS232auxHandle = connectRS232aux()
+  RS232auxHandle:setFrameConfig(rs232auxConfig)
+  
+  
+  
+  fatigueTimer = sys.timer.create()
+  
+  avlStateQ     = sched.createEventQ(4, svc.AVL, "IgnitionOn", "LoggedIn", "Speeding")
+  msgQ          = sched.createEventQ(10, messageHandle, 'RX_DECODED')
+  fatigueTimerQ = sched.createEventQ(2, '_TIMER', fatigueTimer)
+  --auxSerQ     = sched.createEventQ( 30, RS232auxHandle:source(),'FRAME')
+  auxSerQ       = sched.createEventQ( 50, RS232auxHandle:source() )
+  serverConnQ   = sched.createEventQ(2, svc.ip, "SERVER_CONNECTED")      
+
+  stationaryIntvCell_initialValue = svc.AVL.properties.StationaryIntervalCell
+  stationaryIntvSat_initialValue = svc.AVL.properties.StationaryIntervalSat
+  
+  myUtilityConfigTable_buffMsg = {
+      [1]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [2]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [3]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [4]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [5]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [6]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [7]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [8]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [9]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [10]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [11]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [12]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [13]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [14]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [15]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [16]={transport=svc.Utility.Transports.Default, isLog=true, priority=3, lifetime=10080},
+      [17]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [18]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [19]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [20]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [21]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [22]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10080},
+      [23]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [24]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [25]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [26]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [27]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [28]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [29]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [30]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [31]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [32]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [33]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [34]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [35]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [36]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [37]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [38]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [39]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [40]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [41]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [42]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [43]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [44]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [48]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [49]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10080},
+      [50]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [51]={transport=svc.Utility.Transports.Default, isLog=true, priority=3, lifetime=10080},
+      [52]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [53]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [54]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [55]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [56]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [57]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [58]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [59]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [60]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [61]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [62]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [63]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [64]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [65]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [66]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [67]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [68]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [69]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [70]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [71]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [72]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [73]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [74]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [75]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [76]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [77]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [78]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [79]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [80]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [81]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [82]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [83]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [84]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [85]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [86]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [87]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [88]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [89]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [90]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [91]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [92]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [93]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [94]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [95]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [96]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [97]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080},
+      [98]={transport=svc.Utility.Transports.CellOnly, isLog=true, priority=3, lifetime=10080}
+      }
+
+  myUtilityConfigTable_nobuffMsg = {
+      [1]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [2]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [3]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [4]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [5]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [6]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [7]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [8]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [9]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [10]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [11]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [12]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [13]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [14]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [15]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [16]={transport=svc.Utility.Transports.Default, isLog=true, priority=3, lifetime=10080},
+      [17]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [18]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [19]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [20]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [21]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [22]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10080},
+      [23]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [24]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [25]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [26]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [27]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [28]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [29]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [30]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [31]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [32]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [33]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [34]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [35]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [36]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [37]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [38]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [39]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [40]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [41]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [42]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [43]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [44]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [48]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [49]={transport=svc.Utility.Transports.SatOnly, isLog=true, priority=3, lifetime=10080},
+      [50]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [51]={transport=svc.Utility.Transports.Default, isLog=true, priority=3, lifetime=10080},
+      [52]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [53]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [54]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [55]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [56]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [57]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [58]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [59]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [60]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [61]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [62]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [63]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [64]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [65]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [66]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [67]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [68]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [69]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [70]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [71]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [72]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [73]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [74]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [75]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [76]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [77]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [78]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [79]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [80]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [81]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [82]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [83]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [84]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [85]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [86]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [87]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [88]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [89]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [90]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [91]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [92]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [93]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [94]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [95]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [96]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [97]={transport=nil, isLog=true, priority=3, lifetime=10080},
+      [98]={transport=nil, isLog=true, priority=3, lifetime=10080}
+      }
+
+end
+
+</Source>
+        </SourceFile>
+      </SourceFiles>
+    </Service>
+  </Services>
+  <PropertyValues />
+</Project>
