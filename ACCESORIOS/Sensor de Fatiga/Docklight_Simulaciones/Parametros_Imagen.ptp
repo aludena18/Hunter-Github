@@ -1,0 +1,38 @@
+VERSION
+7
+
+COMMSETTINGS
+0
+2
+2
+115200
+2
+63
+4
+0
+0
+
+COMMDISPLAY
+0
+
+SEND
+0
+Read Alarm Volume
+01 03 00 0E 00 01 E5 C9
+0
+5
+
+SEND
+1
+Current Alarm Image
+AA 75 56 56 56 56 F6 00 00 6D
+0
+5
+
+SEND
+2
+Read Distraction Sensivity
+01 03 00 04 00 01 C5 CB
+0
+5
+
